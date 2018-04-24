@@ -27,14 +27,14 @@
 }
 
 .prof-pic {
-	/*width: 168px;
+	width: 168px;
 	height: auto;
 	position: relative;
-	top: -13.8rem;
+	top: -13.3rem;
 	left: 3rem;
 	z-index: 0;
 	transform: rotateZ(10deg);
-	margin-bottom: -184px;*/
+	margin-bottom: -184px;
 }
 
 @media only screen and (min-width: 576px) { 
