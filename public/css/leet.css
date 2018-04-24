@@ -7,7 +7,7 @@
 .title-me {
 	font-size: 4.5rem;
 	line-height: 0.7;
-	color: rgba(40,167,69,0.5); text-shadow:-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; word-spacing: -2rem;
+	color: #28a745; text-shadow:-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; word-spacing: -2rem;
 }
 
 .subtitle {
