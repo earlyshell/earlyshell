@@ -11,7 +11,6 @@ $(document).ready(function(){
 	// };
 
 	var setHeight = function(height){
-		// console.log(height);
 		$('.main-page').height(height);
 		$('.page').css({'min-height':height+'px'});
 	};
@@ -21,10 +20,8 @@ $(document).ready(function(){
 
 	$(window).on('orientationchange resize',function(){
 		setTimeout(function(){
-			// setWidth(window.innerWidth);
 			setHeight(window.innerHeight);
 		},250);
 	});
-	//Added setTimeout. Listener executes first, hence the need to delay.
 	
 });

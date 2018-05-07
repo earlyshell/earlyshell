@@ -24,413 +24,517 @@
         <!-- Font Awesome -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
-        <!-- AnimateCSS -->
-        <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-          crossorigin="anonymous">
-
         <!-- Styles -->
         <link href="public/css/leet.css" rel="stylesheet">
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                /*height: 100vh;*/
-            }
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .title, .title-me {
-                font-family: 'Poiret One', cursive;
-                font-weight: bold;
-            }
-
-            .subtitle, .subtitle-pos, .subtitle-pos2, .subtitle-eng, .subtitle-fswd {
-                font-family: 'Raleway', sans-serif;
-                font-weight: normal;
-                text-transform: uppercase;
-            }
-
-        </style>
     </head>
     <body>
-        
-<!--         <div class="flex-center full-height">
-            @if (Route::has('login'))
-                <div>
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif -->
-            <div class="book container-fluid">
-                <div class="book row">
-                    <div class="col-12 px-0">
-                        <div class="main-page mx-0 d-flex align-items-center justify-content-center" page="1">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="mx-auto text-center" style="margin-top: -3rem;">
-                                        <h1 class="title display-1 font-weight-bold" style="">earlyshell</h1>
-                                        <h2 class="subtitle small"><span class="subtitle-pre">Making Art from</span><span class="subtitle-post">&lt;/Codes&gt; and Engineering</span></h2>
-                                    </div>
-
-                                    <!-- <div>
-                                        <a href="https://laravel.com/docs">Documentation</a>
-                                        <a href="https://laracasts.com">Laracasts</a>
-                                        <a href="https://laravel-news.com">News</a>
-                                        <a href="https://forge.laravel.com">Forge</a>
-                                        <a href="https://github.com/laravel/laravel">GitHub</a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
+        <!-- WELCOME SECTION -->
+        <div class="container-fluid">
+            <div class="row full-height align-items-center">
+                <div class="col">
+                    <div class="row">
+                        <h1 class="title font-weight-bold mx-auto text-center">earlyshell</h1>
                     </div>
-                    <div class="col-12 px-0">
-                        <div class="page mx-0 d-flex align-items-center justify-content-center" page="2">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="mx-auto text-center mt-5 mt-md-0">
-                                        <h1 class="title font-weight-bold" style="color: white; text-shadow: 0 0 1rem grey;">created webpages</h1>
-                                        <!-- <h2 class="subtitle small"><span class="subtitle-pre">Making Art from</span><span class="subtitle-post">&lt;/Codes&gt; and Engineering</span></h2> -->
-                                    </div>
-                                </div>
-                                <div class="row mt-3 mb-5 mx-md-5">
-                                    <!-- DEL LATER -->
-                                    <!-- <style> 
-                                        [class*='col'] { border: 1px solid red; }
-                                    </style> -->
-                                    <div class="col-auto col-md-4 mx-auto my-3">    
-                                        <div class="text-center mb-2"><h3 class="subtitle mb-1" style="font-size: 0.8rem;">The Sandbox</h3></div>
-                                        <div class="mx-auto text-center">
-                                            <a href="https://earlyshell.github.io/TheSandbox" target="_blank">
-                                                <img class="img-fluid img-thumbnail cwp-thumb charlie-brown circle-thumb" style="/*border-radius: 50%; box-shadow: 0 0 0 0.25rem white;*/" src="public/icons_leet/TheSandbox.png" alt="The Sandbox">
-                                            </a>
-                                        </div>
-                                        
-                                        <div class="d-none d-md-block">
-                                            <div class="text-center"><a href="#sandbox-description" data-toggle="collapse"><i class="fas fa-caret-down fa-1x" style="color: #b1d3f4; font-size: 1.5rem;"></i></a></div>
-                                            <div class="collapse px-3 text-center" id="sandbox-description"><span class="small font-italic">Sandbox is a website for a [non-existent] learning center, The Sandbox, offering IT-related and fun workshops for kids and teens. The Sandbox is every children’s playground to start learning web development (in a fun and enjoyable way) as early as 6 years of age. As the saying goes, “Start ‘em young…”.</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto col-md-4 mx-auto my-3">
-                                        <div class="text-center mb-2"><h3 class="subtitle mb-1" style="font-size: 0.8rem;">Cramless</h3></div>
-                                        <div><!-- <img class="img-fluid img-thumbnail" src="#" alt="Cramless"> -->
-                                            <div class="d-flex align-items-center justify-content-center text-center img-thumbnail cwp-thumb mx-auto circle-thumb-grey cramless-bg-grey border-0">
-                                                <a href="http://cramless.elementfx.com/" target="_blank">
-                                                    <span class="fa-stack fa-fw fa-4x" style="right: 0.02rem; top: 0.175rem;"> 
-                                                        <i id="hour" class="fas fa-circle-notch fa-stack-2x text-warning" style="opacity: 1; transform: rotate(270deg);"></i>
-                                                        <i id="minute" class="fas fa-circle-notch fa-stack-2x text-danger" style="opacity: 0.25; transform: rotate(330deg);"></i>
-                                                        <i id="seconds" class="fas fa-share fa-stack-1x text-warning" style="opacity: 1; text-shadow: grey 2px 2px 1px; transform: rotate(186deg);"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="d-none d-md-block">
-                                            <div class="text-center"><a href="#cramless-description" data-toggle="collapse"><i class="fas fa-caret-down fa-1x" style="color: #848484; font-size: 1.5rem;"></i></a></div>
-                                            <div class="collapse px-3 text-center" id="cramless-description"><span class="small font-italic">Cramless is your last minute print-shop. No more cramming: Maximize your time finishing your printables, and we do the last minute printing for you with our UPD (Upload-Print-Deliver) System. Sign up now!</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto col-md-4 mx-auto my-3">
-                                        <div class="text-center mb-2"><h3 class="subtitle mb-1" style="font-size: 0.8rem;">Findee</h3></div>
-                                        <a href="http://findeee.000webhostapp.com/" target="_blank">
-                                            <div class="mx-auto text-center cwp-thumb circle-thumb img-thumbnail border-0">
-                                                <div class="rounded-circle" style="box-shadow: 0 0 1rem 0.1rem skyblue;">
-                                                    <img style="width: 7rem; height: auto;" src="public/icons_leet/findeeicon.png" alt="Findee">
-                                                 </div>
-                                            </div>
-                                        </a>
-                                        <div class="d-none d-md-block">
-                                            <div class="text-center"><a href="#findee-description" data-toggle="collapse"><i class="fas fa-caret-down fa-1x" style="color: skyblue; font-size: 1.5rem;"></i></a></div>
-                                            <div class="collapse px-3 text-center" id="findee-description"><span class="small font-italic">Findee is a game based on the hit puzzles book, Where's Wally (Waldo). Play Now!</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mx-auto text-center mt-5 mb-2 mt-md-0">
-                                        <span class=""><i class="fas fa-quote-left"></i> Every work goes through the 'ugly' phase...at bloom, you'll understand why. <i class="fas fa-quote-right"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row">
+                        <h3 class="subtitle mx-auto small">
+                            <span class="subtitle-pre">Making Art from</span>
+                            <span class="subtitle-post">&lt;/Codes&gt; and Engineering</span>
+                        </h3>
                     </div>
-                    <div class="col-12 px-0">
-                        <div class="page mx-0 d-flex align-items-center justify-content-center" page="3">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="mx-auto text-center mt-5 mt-md-0">
-                                        <h1 class="title font-weight-bold" style="color: skyblue; text-shadow: 0 0 1rem white;">related works</h1>
-                                        <h2 class="subtitle small">Design | Electronics | Photoshop | Phonetography</h2>
-                                    </div>
-                                </div>
-                                <div class="row mt-3 mx-md-5 pb-md-3">
-                                    <div class="col-6 col-sm-3 col-md-3 mx-auto mt-3">    
-                                        <div class="text-center">
-                                            <a href="https://reeto21ph.deviantart.com/art/Culture-meets-Negative-Cambers-739573327" target="_blank">
-                                                <img src="https://img00.deviantart.net/4f17/i/2018/099/b/4/culture_meets_negative_cambers_by_reeto21ph-dc8bmfj.jpg" alt="Culture Meets (-) Cambers" title="Culture Meets Negative Cambers" class="img-thumbnail img-fluid othwork-thumb" style="box-shadow: 3px 3px 12px -1px grey;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 col-md-3 mx-auto mt-3">    
-                                        <div class="text-center">
-                                            <a href="https://reeto21ph.deviantart.com/art/V-GND-Receive-Transmit-739575042" target="_blank">
-                                                <img src="https://img00.deviantart.net/55ae/i/2018/099/e/9/v__gnd_receive_transmit_by_reeto21ph-dc8bnr6.jpg" alt="V+ GND Receive Transmit" title="V+ GND Receive Transmit" class="img-thumbnail img-fluid othwork-thumb" style="box-shadow: 3px 3px 12px -1px grey;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 col-md-3 mx-auto mt-3">    
-                                        <div class="text-center">
-                                            <a href="https://reeto21ph.deviantart.com/art/Zumba-Poster-Empire-Boxing-Pasig-739588365" target="_blank">
-                                                <img src="https://img00.deviantart.net/cf6a/i/2018/099/6/b/zumba_poster___empire_boxing_pasig_by_reeto21ph-dc8by19.png" alt="Empire Woot! Woot! Shake!" title="Empire Pasig - Zumba" class="img-thumbnail img-fluid othwork-thumb" style="box-shadow: 3px 3px 12px -1px grey;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 col-md-3 mx-auto mt-3">    
-                                        <div class="text-center">
-                                            <a href="https://reeto21ph.deviantart.com/art/Off-Season-739583032" target="_blank">
-                                                <img src="https://img00.deviantart.net/3486/i/2018/099/c/6/off_season_by_reeto21ph-dc8btx4.jpg" alt="Off-season" title="Off-season" class="img-thumbnail img-fluid othwork-thumb" style="box-shadow: 3px 3px 12px -1px grey;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-5 mb-3">
-                                    <div class="mx-auto text-center mt-5 mt-md-0">
-                                        <span><a class="shadow" title="reeto21ph.deviantart.com" href="https://reeto21ph.deviantart.com/" target="_blank"><i class="fab fa-deviantart fa-2x" style="color: #05cc47;"></i><span style="font-family: 'Poiret One', cursive !important; font-size: 1.75rem;" class="font-weight-bold deviantart-text">&nbsp;reeto21ph</span></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 px-0">
-                        <div class="page mx-0 d-flex align-items-center justify-content-center" page="4">
-                            <div class="container-fluid">
-                                <div class="row" style="position: relative; z-index: 3;">
-                                    <div class="mx-auto text-center mt-5 mt-md-0">
-                                        <h1 class="title-me font-weight-bold">earl hapal</h1>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mx-auto text-center">
-                                        <img src="public/icons_leet/EHapal.jpg" alt="Earl" class="polaroid-bg img-thumbnail pt-2 pl-2 pr-2 pb-4 prof-pic rounded-0">
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col col-md-7 mx-md-auto text-center">
-                                        <p class="mb-0">ENGINEER | SUPPORT SPECIALIST | SUPPORT ANALYST | QA ANALYST</p>
-                                        <p style="">Earl has been in the IT industry for more than 6 years and has handled various roles. He started out as a Support Specialist, promoted as a Support Analyst (Jr. Business Analyst), shifted and became a Quality Assurance Analyst. He is now pursuing a career in Web Development as a Full Stack Web Developer. Earl is a kid at heart who loves arts and mechatronics. He now makes art from &lt;/codes&gt; and engineering</p>
-                                    </div>
-                                </div>
-                                <div class="row mx-auto text-center mb-3">
-                                    <a href="https://drive.google.com/file/d/1r4rhCPt46qURUNEBTq73QD6j8joiyKXu/view?usp=sharing" class="btn btn-success mx-auto mt-3" style="border-radius: 5rem; color: white;" target="_blank"><i class="fas fa-download fa-fw"></i>&nbsp;Resume</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 px-0">
-                        <div class="page mx-0 d-flex align-items-center justify-content-center" page="5">
-                            <div class="container-fluid ">
-                                <div class="row">
-                                    <div class="col mx-auto text-center mt-5 mb-1 mb-md-3 mt-md-0">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h1 class="title-me font-weight-bold">more...</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2 mt-md-5 mx-md-5">
-                                    <div class="col-12 col-md-4">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h3 class="subtitle mb-1 font-weight-bold" style="font-size: 0.8rem;">SKILLS</h3>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-success font-weight-normal">advanced</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>HTML</span>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-success font-weight-normal">advanced</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>CSS</span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-primary font-weight-normal">intermediate</span>
-                                            </div>
-                                            <div class="col">
-                                                <span></i>Javascript </span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-primary font-weight-normal">intermediate</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>jQuery </span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-primary font-weight-normal">intermediate</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>PHP </span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-success font-weight-normal">advanced</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>mySQL</span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-info font-weight-normal">beginner</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>Java </span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-primary font-weight-normal">intermediate</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>C++ (Microcontrollers) </span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-info font-weight-normal">beginner</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>Laravel</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3 mb-md-0">
-                                            <div class="col-3">
-                                                <span class="badge badge-success font-weight-normal">advanced</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>Bootstrap 3 and 4</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h3 class="subtitle mb-1 font-weight-bold" style="font-size: 0.8rem;">OTHER SKILLS</h3>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-success font-weight-normal">advanced</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>Photoshop</span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-success font-weight-normal">advanced</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>Design/Desktop Publishing</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-3">
-                                            <div class="col">
-                                                <h3 class="subtitle mb-1 font-weight-bold" style="font-size: 0.8rem;">ALMA MATER</h3>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-success font-weight-normal">BS MEM-MR</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>De La Salle University - Manila</span>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="row">
-                                            <div class="col-3">
-                                                <span class="badge badge-primary font-weight-bold text-warning">HS Diploma</span>
-                                            </div>
-                                            <div class="col">
-                                                <span>Marist School</span>
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                    <div class="col-12 col-md-4 mt-4 mt-md-0">
-                                        <div class="row ">
-                                            
-                                        </div>
-                                        <div class="row mt-2">
-                                            <div class="col mx-2">   
-                                                <div class="row mx-auto mb-2">
-                                                    <div class="col-12 mx-auto text-center">
-                                                        <a href="https://www.linkedin.com/in/earlhapal" target="_blank"><span><i class="fab fa-linkedin fa-fw fa-4x" style="color:#0077B5;" title="Earl Hapal"></i></span></a>
-                                                        <a href="https://reeto21ph.deviantart.com" target="_blank"><span><i class="fab fa-deviantart fa-fw fa-4x" style="color: green;" title="reeto21ph"></i></span></a>
-                                                        <a href="https://github.com/earlyshell" target="_blank"><span><i class="fab fa-github-square fa-fw fa-4x" style="color: black;" title="reeto21ph"></i></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col mx-auto text-center">
-                                                        <h3 class="mb-1 font-weight-bold text-center" style="font-size: 0.8rem;">I'd like to work with you...</h3>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col mx-auto text-center">
-                                                        <h3 class="subtitle mb-1 font-weight-normal text-center" style="font-size: 0.8rem;">+63 939 522 2413</h3>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col mx-auto text-center">
-                                                        <h3 class="mb-1 font-weight-normal text-center" style="font-size: 0.8rem;">hapal.earl.p@gmail.com</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="page col-auto" page="2">
-                        <div class="mx-0 d-flex align-items-center justify-content-center full-height">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="mx-auto text-center" style="margin-top: -3rem;">
-                                        <h1 class="title display-1 font-weight-bold" style="">{{ config('app.name') }}</h1>
-                                        <h2 class="subtitle small"><span class="subtitle-pre">Making Art from</span><span class="subtitle-post">&lt;/Codes&gt; and Engineering</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
+        </div>
 
-        <script src="public/js/horizontalPager.js"></script>
+        <!-- WEBPAGES SECTION -->
+        <div class="container-fluid" page="2" id="2">
+            <div class="row full-height align-items-center">
+                <div class="col my-4">
+                    <div class="row pb-2">
+                        <h1 class="title title-multiline title-p2 font-weight-bold mx-auto px-sm-4 text-center my-sm-4 col-sm-8 col-md-12 col-lg-8 col-xl-7 text-center">created webpages</h1>
+                    </div>
+                    <div class="row mt-4 py-md-4 justify-content-center">
+                        <!-- THE SANDBOX -->
+                        <div id="link-sandbox" class="wp-link">
+                            <a >
+                                <div class="mx-auto text-left p-1 wp-link">                                
+                                    <img class="img-fluid img-thumbnail cwp-thumb charlie-brown circle-thumb" src="public/icons_leet/TheSandbox.png" alt="The Sandbox">
+                                </div>
+                            </a>
+                            <div class="collapse px-3 text-center" id="sandbox-description">
+                                <div class="my-2 my-sm-4 mx-auto col-sm-8 col-xl-8">
+                                    <span class="small">Sandbox is a website for a [non-existent] learning center, The Sandbox, offering IT-related and fun workshops for kids and teens. The Sandbox is every children’s playground to start learning web development (in a fun and enjoyable way) as early as 6 years of age. As the saying goes, <span class="font-italic">“Start ‘em young…”</span>.</span>
+                                </div>
+                                <div class="mb-4 mx-auto align-self-center justify-content-center d-none d-md-block">
+                                    <div class="row mx-auto justify-content-center align-self-center">
+                                        <div class="col-5">
+                                            <div class="row pb-2">
+                                                <div class="col">
+                                                    <img src="public/screens/sandbox_landing_lt.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="row pt-1">
+                                                <div class="col">
+                                                    <img src="public/screens/sandbox_program_lt.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="public/screens/sandbox_landing_mobile.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-1">
+                                    <a class="btn btn-primary" style="border-radius: 5rem; color: #fff;" href="https://earlyshell.github.io/TheSandbox" target="_blank"><span class="small px-5">The Sandbox</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CRAMLESS -->
+                        <div id="link-cramless" class="wp-link">
+                            <a >
+                                <div class="mx-auto text-center p-1 wp-link">
+                                    <div class="d-flex align-items-center justify-content-center text-center img-thumbnail cwp-thumb mx-auto circle-thumb-grey cramless-bg-grey border-0">
+                                        <span class="fa-stack fa-fw fa-4x" style="right: 0.29rem; top: 0.01rem;"> 
+                                            <i id="hour" class="fas fa-circle-notch fa-stack-2x text-warning" style="opacity: 1; transform: rotate(270deg);"></i>
+                                            <i id="minute" class="fas fa-circle-notch fa-stack-2x text-danger" style="opacity: 0.25; transform: rotate(330deg);"></i>
+                                            <i id="seconds" class="fas fa-share fa-stack-1x text-warning" style="opacity: 1; text-shadow: grey 2px 2px 1px; transform: rotate(186deg);"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="collapse px-3 text-center" id="cramless-description">
+                                <div class="my-2 my-sm-4 mx-auto col-sm-8 col-xl-7">
+                                    <span class="small">Cramless is your last minute print-shop.<br>No more cramming: Maximize your time finishing your printables, and we do the last minute printing for you with our UPD (Upload-Print-Deliver) System.<br><span class="font-weight-bold">Sign up now!</span></span>
+                                </div>
+                                <div class="mb-4 mx-auto align-self-center justify-content-center d-none d-md-block">
+                                    <div class="row mx-auto justify-content-center align-self-center">
+                                        <div class="col-5">
+                                            <div class="row pb-2">
+                                                <div class="col">
+                                                    <img src="public/screens/cramless_printnow_lt.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="row pt-1">
+                                                <div class="col">
+                                                    <img src="public/screens/cramless_paytoproceed_lt.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="public/screens/cramless_landing_mobile.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-1">
+                                    <a class="btn btn-warning" style="border-radius: 5rem; color: #fff;" href="http://cramless.elementfx.com" target="_blank"><span class="small px-5">Cramless</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FINDEE -->
+                        <div id="link-findee" class="wp-link">
+                            <a >
+                                <div class="mx-auto text-right p-1 wp-link">
+                                    <div class="mx-auto text-center align-self-center cwp-thumb circle-thumb img-thumbnail border-0">
+                                        <div class="rounded-circle" style="box-shadow: 0 0 1rem 0.1rem skyblue;">
+                                            <img style="width: 6.5rem; height: auto;" src="public/icons_leet/findeeicon.png" alt="Findee">
+                                         </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="collapse px-3 text-center" id="findee-description">
+                                <div class="my-2 my-sm-4 mx-auto col-sm-7 col-xl-7">
+                                    <span class="small">Findee is a game based on the hit puzzles book, Where's Wally (Waldo). You deserve a break.<br><span class="font-weight-bold">Play Now!</span></span>
+                                </div>
+                                <div class="mb-4 mx-auto align-self-center justify-content-center d-none d-md-block">
+                                    <div class="row mx-auto justify-content-center align-self-center">
+                                        <div class="col-5">
+                                            <div class="row pb-2">
+                                                <div class="col">
+                                                    <img src="public/screens/findee_landing_lt.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="row pt-1">
+                                                <div class="col">
+                                                    <img src="public/screens/findee_game_lt.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="public/screens/findee_landing_mobile.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-1">
+                                    <a class="btn btn-info" style="border-radius: 5rem; color: #fff;" href="http://findeee.000webhostapp.com" target="_blank"><span class="small px-5">Findee</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="mx-auto text-center">
+                            <span id="cw-footer">more to come...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OTHER WORKS SECTION -->
+        <div class="container-fluid" page="3" id="3">
+            <div class="row full-height align-items-center">
+                <div class="col my-4">
+                    <div class="row pb-2">
+                        <!-- <h1 class="title title-multiline title-p2 font-weight-bold mx-auto px-sm-4 text-center my-lg-4 col-lg-6">created webpages</h1> -->
+                        <h1 class="title title-multiline title-p3 font-weight-bold mx-auto text-center px-sm-4 text-center mt-sm-4 col-sm-6 col-xl-5">related works</h1>
+                    </div>
+                    <div class="row">
+                        <h3 class="subtitle subtitle-p2 mx-auto small">
+                            <span class="text-upper">Design | Electronics | Photoshop | Phonetography</span>
+                        </h3>
+                    </div>
+                    <div class="row mt-4">
+                        <div id="carouselIndicators" class="col-12 carousel slide othcar-misc d-md-none" data-ride="carousel">
+                            <!-- <ol class="carousel-indicators">
+                                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                            </ol> -->
+                            <div class="carousel-inner mx-auto">
+                                <div class="carousel-item text-center active">
+                                    <a href="https://reeto21ph.deviantart.com/art/Culture-meets-Negative-Cambers-739573327" target="_blank">
+                                        <img src="https://img00.deviantart.net/4f17/i/2018/099/b/4/culture_meets_negative_cambers_by_reeto21ph-dc8bmfj.jpg" alt="Culture Meets (-) Cambers" title="Culture Meets Negative Cambers" class="img-fluid othwork-img" style="">
+                                    </a>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <a href="https://reeto21ph.deviantart.com/art/V-GND-Receive-Transmit-739575042" target="_blank">
+                                        <img src="https://img00.deviantart.net/55ae/i/2018/099/e/9/v__gnd_receive_transmit_by_reeto21ph-dc8bnr6.jpg" alt="V+ GND Receive Transmit" title="V+ GND Receive Transmit" class="img-fluid othwork-img" style="">
+                                    </a>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <a href="https://reeto21ph.deviantart.com/art/Zumba-Poster-Empire-Boxing-Pasig-739588365" target="_blank">
+                                        <img src="https://img00.deviantart.net/cf6a/i/2018/099/6/b/zumba_poster___empire_boxing_pasig_by_reeto21ph-dc8by19.png" alt="Empire Woot! Woot! Shake!" title="Empire Pasig - Zumba" class="img-fluid othwork-img" style="">
+                                    </a>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <a href="https://reeto21ph.deviantart.com/art/Off-Season-739583032" target="_blank">
+                                        <img src="https://img00.deviantart.net/3486/i/2018/099/c/6/off_season_by_reeto21ph-dc8btx4.jpg" alt="Off-season" title="Off-season" class="img-fluid othwork-img" style="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 mx-auto px-5 d-none d-md-block">
+                            <div class="row px-lg-5 justify-content-center">
+                                <div class="col align-self-end justify-content-end pr-0 text-right">
+                                    <a href="https://reeto21ph.deviantart.com/art/Culture-meets-Negative-Cambers-739573327" target="_blank">
+                                        <img src="https://img00.deviantart.net/4f17/i/2018/099/b/4/culture_meets_negative_cambers_by_reeto21ph-dc8bmfj.jpg" alt="Culture Meets (-) Cambers" title="Culture Meets Negative Cambers" class="img-fluid othwork-img pt-xl-4" style="">
+                                    </a>
+                                </div>
+                                <div class="col align-self-end justify-content-start pl-0 text-left">
+                                    <a href="https://reeto21ph.deviantart.com/art/V-GND-Receive-Transmit-739575042" target="_blank">
+                                        <img src="https://img00.deviantart.net/55ae/i/2018/099/e/9/v__gnd_receive_transmit_by_reeto21ph-dc8bnr6.jpg" alt="V+ GND Receive Transmit" title="V+ GND Receive Transmit" class="img-fluid othwork-img pr-4" style="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row px-lg-5 justify-content-center">
+                                <div class="col align-self-start justify-content-end pr-0 text-right">
+                                    <a href="https://reeto21ph.deviantart.com/art/Zumba-Poster-Empire-Boxing-Pasig-739588365" target="_blank">
+                                        <img src="https://img00.deviantart.net/cf6a/i/2018/099/6/b/zumba_poster___empire_boxing_pasig_by_reeto21ph-dc8by19.png" alt="Empire Woot! Woot! Shake!" title="Empire Pasig - Zumba" class="img-fluid othwork-img pl-4" style="">
+                                    </a>
+                                </div>
+                                <div class="col align-self-start justify-content-start pl-0 text-left">
+                                    <a href="https://reeto21ph.deviantart.com/art/Off-Season-739583032" target="_blank">
+                                        <img src="https://img00.deviantart.net/3486/i/2018/099/c/6/off_season_by_reeto21ph-dc8btx4.jpg" alt="Off-season" title="Off-season" class="img-fluid othwork-img pb-xl-4" style="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12">
+                            <div class="mx-auto text-center othwork-thumb m-1">
+                                <a href="https://reeto21ph.deviantart.com/art/Culture-meets-Negative-Cambers-739573327" target="_blank">
+                                    <img src="https://img00.deviantart.net/4f17/i/2018/099/b/4/culture_meets_negative_cambers_by_reeto21ph-dc8bmfj.jpg" alt="Culture Meets (-) Cambers" title="Culture Meets Negative Cambers" class="img-fluid othwork-img" style="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mx-auto text-center othwork-thumb m-1">
+                                <a href="https://reeto21ph.deviantart.com/art/V-GND-Receive-Transmit-739575042" target="_blank">
+                                    <img src="https://img00.deviantart.net/55ae/i/2018/099/e/9/v__gnd_receive_transmit_by_reeto21ph-dc8bnr6.jpg" alt="V+ GND Receive Transmit" title="V+ GND Receive Transmit" class="img-fluid othwork-img" style="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mx-auto text-center othwork-thumb m-1">
+                                <a href="https://reeto21ph.deviantart.com/art/Zumba-Poster-Empire-Boxing-Pasig-739588365" target="_blank">
+                                    <img src="https://img00.deviantart.net/cf6a/i/2018/099/6/b/zumba_poster___empire_boxing_pasig_by_reeto21ph-dc8by19.png" alt="Empire Woot! Woot! Shake!" title="Empire Pasig - Zumba" class="img-fluid othwork-img" style="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mx-auto text-center othwork-thumb m-1">
+                                <a href="https://reeto21ph.deviantart.com/art/Off-Season-739583032" target="_blank">
+                                    <img src="https://img00.deviantart.net/3486/i/2018/099/c/6/off_season_by_reeto21ph-dc8btx4.jpg" alt="Off-season" title="Off-season" class="img-fluid othwork-img" style="">
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="row mt-4 mb-3">
+                        <div class="mx-auto text-center">
+                            <span>
+                                <a class="btn btn-outline-secondary" title="reeto21ph.deviantart.com" href="https://reeto21ph.deviantart.com/" target="_blank" style="border-radius: 5rem;">
+                                    <i class="fab fa-deviantart" style="color: #05cc47;"></i><span class="font-weight-bold">&nbsp;reeto21ph</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-6 mx-auto text-center">
+                            <div class="w-100">
+                                <span class="small">Some Engineering Projects</span>
+                            </div>
+                            <div class="badge badge-primary">
+                                <a href="https://www.facebook.com/media/set/?set=a.91512831097.104293.527436097&type=1&l=20f69966b5" target="_blank"><span class="text-white">Microcontrollers + Controls Eng'g Activities</span></a>
+                            </div>
+                            <div class="badge badge-info">
+                                <a href="https://www.facebook.com/media/set/?set=a.91505966097.104291.527436097&type=1&l=28fffbcfe3" target="_blank"><span class="text-white">Line Tracing Robot</span></a>
+                            </div>
+                            <div class="badge badge-warning">
+                                <a href="https://www.facebook.com/media/set/?set=a.144307011097.136987.527436097&type=1&l=9958d9ed29" target="_blank"><span class="text-dark">CATIA - CAD I</span></a>
+                            </div>
+                            <div class="badge badge-warning">
+                                <a href="https://www.facebook.com/media/set/?set=a.148188936097.139042.527436097&type=1&l=dac64dbc2e" target="_blank"><span class="text-dark">CATIA - CAD II</span></a>
+                            </div>
+                            <!-- <img src="https://scontent.fmnl2-1.fna.fbcdn.net/v/t1.0-9/10400252_91513926097_2187155_n.jpg?_nc_cat=0&oh=ecc67cd01b6935511f4ac478b1224941&oe=5B58901B"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <div class="container-fluid" page="4" id="4">
+            <div class="row full-height align-items-center">
+                <div class="col my-4">
+                    <div class="row pb-2">
+                        <h1 class="title title-multiline title-p4 font-weight-bold mx-auto text-center text-success mt-sm-4" style="word-spacing: -1rem;">earl hapal</h1>
+                    </div>
+                    <div class="row mt-3 mt-md-4">
+                        <h3 class="subtitle mx-auto small mb-0">
+                            <span class="text-upper">Engineer | Support Specialist | Support Analyst | QA Analyst</span>
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <h3 class="subtitle mx-auto">
+                            <span class="text-upper font-weight-bold">FULL-STACK WEB DEVELOPER</span>
+                        </h3>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col mx-auto text-center">
+                            <img src="public/icons_leet/EHapal.jpg" alt="Earl" class="img-thumbnail p-1 shadow rounded-0 prof-pic-size">
+                        </div>
+                    </div>
+                    <div id="eh-info">
+                        <div class="row mt-2">
+                            <div class="col mx-auto text-center">
+                                <a id="eh-description-btn" class="mx-2 text-info" data-toggle="collapse">
+                                    <i class="fas fa-info-circle fa-2x"></i>
+                                </a>
+                                <a id="eh-skills-btn" class="mx-2 text-warning" data-toggle="collapse">
+                                    <i class="fas fa-code fa-2x"></i>
+                                </a>
+                                <a id="eh-almamater-btn" class="mx-2 text-secondary" data-toggle="collapse">
+                                    <i class="fas fa-graduation-cap fa-2x"></i>
+                                </a>
+                                <a id="eh-links-btn" class="mx-2 text-primary" data-toggle="collapse">
+                                    <i class="fas fa-link fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-sm-9 mx-auto collapse show my-2" id="eh-description">
+                                <p class="small text-center px-3 desc-md desc-lg col-lg-9 col-xl-7 mx-lg-auto">
+                                    Earl has been in the IT industry for more than 6 years and has handled various roles. He started out as a Support Specialist, promoted as a Support Analyst (Jr. Business Analyst), shifted and became a Quality Assurance Analyst. He is now pursuing a career in Web Development as a Full Stack Web Developer. Earl is a kid at heart who loves arts and mechatronics. He now makes art from &lt;/codes&gt; and engineering
+                                </p>
+                            </div>
+                            <div class="col collapse my-2" id="eh-skills">
+                                <div class="px-3">
+                                     <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-success font-weight-normal">advanced</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>HTML/CSS</span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-primary font-weight-normal">intermediate</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>Javascript (+ jQuery)</span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-primary font-weight-normal">intermediate</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>PHP</span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-success font-weight-normal">advanced</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>mySQL</span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-info font-weight-normal">beginner</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>Java</span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-primary font-weight-normal">intermediate</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>C++ <span class="small">(Microcontrollers)</span></span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-info font-weight-normal">beginner</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>Laravel</span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-success font-weight-normal">advanced</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>Bootstrap (3, 4)</span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-success font-weight-normal">advanced</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>Design/Photoshop</span>
+                                        </div>  
+                                    </div>
+                                    <div class="row mx-auto">
+                                        <div class="col text-right px-1">
+                                            <span class="badge badge-success font-weight-normal">advanced</span>
+                                        </div>
+                                        <div class="col text-left px-1">
+                                            <span>Desktop Publishing</span>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col collapse my-2" id="eh-links">
+                                <div class="mx-auto text-center my-2">
+                                    <div class="row mx-auto text-center justify-content-center">
+                                    
+                                    <div class="col-auto col-sm-12 align-self-center px-1">
+                                        <a href="https://www.linkedin.com/in/earlhapal" target="_blank"><span><i class="fab fa-linkedin fa-fw fa-3x" style="color:#0077B5;" title="Earl Hapal"></i></span></a>
+                                    </div>
+                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
+                                        <div class="row text-center align-self-center justify-content-center"><a href="https://www.linkedin.com/in/earlhapal" target="_blank" class="text-secondary">Earl Hapal</a></div> 
+                                    </div>
+
+                                    <div class="w-100 d-none d-sm-block"></div>
+
+                                    <div class="col-auto col-sm-12 align-self-center px-1">
+                                        <a href="https://reeto21ph.deviantart.com" target="_blank"><span><i class="fab fa-deviantart fa-fw fa-3x" style="color: green;" title="reeto21ph"></i></span></a>
+                                    </div>
+                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
+                                        <div class="row text-center align-self-center justify-content-center"><a href="https://reeto21ph.deviantart.com" target="_blank" class="text-secondary">reeto21ph</a></div>
+                                    </div>
+
+                                    <div class="w-100 d-none d-sm-block"></div>
+
+                                    <div class="col-auto col-sm-12 align-self-center px-1">
+                                        <a href="https://github.com/earlyshell" target="_blank"><span><i class="fab fa-github-square fa-fw fa-3x" style="color: black;" title="reeto21ph"></i></span></a>
+                                    </div>
+                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
+                                        <div class="row text-center align-self-center justify-content-center"><a href="https://github.com/earlyshell" target="_blank" class="text-secondary">earlyshell</a></div>
+                                    </div>
+
+                                    <div class="w-100 d-none d-sm-block"></div>
+
+                                </div>
+
+                                    
+                                    
+                                    
+                                                   
+                                </div>
+                            </div>
+                            <div class="col collapse my-2" id="eh-almamater">
+                                <div class="row mx-auto text-center justify-content-center">
+                                    
+                                    <div class="col-auto col-sm-12 align-self-center px-1">
+                                        <a href="https://tuitt.com/" target="_blank"><img src="public/icons_leet/tuitt_logo.png" alt="Tuitt " class="rounded-0 mx-1 my-sm-2" style="width: 3rem; height: auto;"></a>
+                                    </div>
+                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
+                                        <div class="row h5 font-weight-bold my-0 text-center align-self-center justify-content-center">Tuitt Coding Bootcamp</div>
+                                        <div class="row text-center align-self-center justify-content-center">Full-stack Web Development</div> 
+                                    </div>
+
+                                    <div class="w-100 d-none d-sm-block"></div>
+
+                                    <div class="col-auto col-sm-12 align-self-center px-1">
+                                        <a href="https://www.dlsu.edu.ph/" target="_blank"><img src="public/icons_leet/dlsu_logo.png" alt="DLSU-M" class="rounded-0 mx-1 my-sm-2" style="width: 3.5rem; height: auto;"></a>
+                                    </div>
+                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
+                                        <div class="row h5 font-weight-bold my-0 text-center align-self-center justify-content-center">De La Salle University - Manila</div>
+                                        <div class="row text-center align-self-center justify-content-center">BS Manufacturing Engineering and Management</div>
+                                    </div>
+
+                                    <div class="w-100 d-none d-sm-block"></div>
+
+                                    <div class="col-auto col-sm-12 align-self-center px-1">
+                                        <a href="http://maristschool.edu.ph/" target="_blank"><img src="public/icons_leet/marist_logo.png" alt="Marist School" class="rounded-0 mx-1 my-sm-2" style="width: auto; height: 4rem;"></a>
+                                    </div>
+                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
+                                        <div class="row h5 font-weight-bold my-0 text-center align-self-center justify-content-center">Marist School</div>
+                                        <div class="row text-center align-self-center justify-content-center">High School</div>
+                                    </div>
+
+                                    <div class="w-100 d-none d-sm-block"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mx-auto text-center">
+                                <span>
+                                    <a href="https://drive.google.com/file/d/1r4rhCPt46qURUNEBTq73QD6j8joiyKXu/view?usp=sharing" class="btn btn-success mx-auto mt-1" style="border-radius: 5rem; color: white;" target="_blank"><span class="mx-5"><i class="fas fa-download fa-fw"></i><!-- <i class="fas fa-download fa-fw"></i> -->&nbsp;Resume</span></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 text-center mx-auto">
+                                <a href="mailto:hapal.earl.p@gmail.com" class="text-success desc-lg">hapal.earl.p@gmail.com</a>
+                                <div style="line-height: 0.5;" class="desc-lg"><span>+63 939 522 2413</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="public/js/watch.js"></script>
-        <!-- <script src="{{ asset('js/othworkSizing.js') }}"></script> -->
-
-<!--         </div> -->
+        <script src="public/js/createdwebpages.js"></script>
+        <script src="public/js/maininfo.js"></script>
     </body>
 </html>
