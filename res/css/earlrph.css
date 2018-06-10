@@ -1,0 +1,287 @@
+@font-face {
+    font-family: Mont-ExtraLight;
+    src: url(../fonts/Mont-ExtraLightDEMO.otf);
+}
+
+@font-face {
+    font-family: Mont-Heavy;
+    src: url(../fonts/Mont-HeavyDEMO.otf);
+}
+
+@font-face {
+	font-family: Queen-Camelot;
+	src: url(../fonts/QueenCamelot.otf);
+}
+
+@font-face {
+	font-family: Arial;
+	src: url(../fonts/arial.ttf);
+}
+
+.font-montEL {
+	font-family: Mont-ExtraLight;
+}
+
+.font-montH {
+	font-family: Mont-Heavy;
+}
+
+.font-queenCamelot {
+	font-family: Queen-Camelot;
+}
+
+.font-arial {
+	font-family: Arial;
+}
+
+body {
+	font-size: 0.8rem;
+}
+
+#welcome-section {
+	height: 100vh;
+	background-image: url('../images/welcomebg.png');
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content-section,
+#footer-section {
+	background-color: #000;
+}
+
+.a-welcome:link,
+.a-welcome:visited {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.a-welcome:hover,
+.a-welcome:active,
+.a-welcome:focus {
+	color: #888;
+	text-decoration: none;
+	text-shadow: 0px 0px 2px #aaa;
+	transition: 0.75s ease;
+}
+
+.a-me:link,
+.a-me:visited {
+	text-decoration: none;
+}
+
+.a-me:hover,
+.a-me:active,
+.a-me:focus {
+	color: orange;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.a:link,
+.a:visited {
+	color: #888;
+	text-decoration: none;
+}
+
+.a:hover,
+.a:active,
+.a:focus {
+	color: #007bff;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.a-inv:link,
+.a-inv:visited {
+	color: #888;
+	text-decoration: none;
+}
+
+.a-inv:hover,
+.a-inv:active,
+.a-inv:focus {
+	color: orange;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.a-footer:link,
+.a-footer:visited {
+	color: #888;
+	text-decoration: none;
+}
+
+.a-footer:hover,
+.a-footer:active,
+.a-footer:focus {
+	color: #007bff;
+	text-decoration: none;
+	text-shadow: 0px 0px 2px #aaa;
+	transition: 0.75s ease;
+}
+
+.hover-text-green:hover,
+.hover-text-green:active,
+.hover-text-green:focus {
+	color: green;
+}
+
+.invert-color:hover,
+.invert-color:active,
+.invert-color:focus {
+	-webkit-filter: invert(100%);
+	-moz-filter: invert(100%);
+	-o-filter: invert(100%);
+	-ms-filter: invert(100%);
+	filter: invert(100%);
+	transition: 0.75s ease;
+}
+
+.glow:hover,
+.glow:active,
+.glow:focus {
+	-webkit-filter: invert(100%);
+	-moz-filter: invert(100%);
+	-o-filter: invert(100%);
+	-ms-filter: invert(100%);
+	filter: invert(100%);
+	text-shadow: 0 0 30px black;
+	transition: 0.35s ease;
+}
+
+[id*="car"] {
+	height: 20px;
+	width: auto;
+	margin-bottom: 3px;
+	position: relative;
+}
+
+[class*="wheel"] {
+	height: 13px;
+	position: relative;
+	top: 5px;
+	width: auto;
+}
+
+#car1 {
+	z-index: 2;
+}
+#car1+.wheelf {
+	left: -11px;
+	z-index: 3;
+}
+
+#car1+.wheelf+.wheelb {
+	left: -76.75px;
+	z-index: 3;
+}
+
+#car2 {
+	left:-60px;
+	z-index: 1;
+}
+
+#car2+.wheelf {
+	left: -80px;
+	z-index: 0;
+}
+
+#car2+.wheelf+.wheelb {
+	left: -135px;
+	z-index: 0;
+}
+
+
+/* Modified fa-spin for the wheels - faster-spin */
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.faster-spin {
+	-webkit-animation: fa-spin 0.35s infinite linear !important;
+	-moz-animation: fa-spin 0.35s infinite linear !important;
+	-o-animation: fa-spin 0.35s infinite linear !important;
+	-ms-animation: fa-spin 0.35s infinite linear !important;
+	animation: fa-spin 0.35s infinite linear !important;
+}
+
+/* ----- */
+
+@keyframes race {
+	0% {
+		left: -10%;
+	}
+
+	100% {
+		left: 110%;
+	}
+}
+
+#assy1 {
+	position: relative;
+	animation: race 12s infinite linear;
+}
+
+#assy2 {
+	position: relative;
+	animation: race 10s infinite linear;
+}
+
+.arts-bg {
+	background-image: url('../images/lazyjeep.jpg');
+	background-size: cover;
+}
+
+.graph-bg {
+	background-color: #000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23a1a1a1' fill-opacity='0.8'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.diagonal-bg {
+	background-color: #000000;
+	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.29' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+
+.cont-desc {
+	opacity: 0;
+	transition: 0.75s ease;
+}
+
+.card-container:hover .cont-desc {
+	opacity: 1;
+}
+
+.card-container:hover [class*="-bg"] {
+	opacity: 0;
+}
+
+.proj-prev {
+	filter: grayscale(100%);
+	max-width: 3rem;
+}
+
+.proj-prev:hover {
+	filter: grayscale(0%);
+	
+}
+
+[class*="linkedin"]:hover {
+	color: #0077B5;
+}
