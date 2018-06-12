@@ -47,9 +47,6 @@
 				<div class="col m-3">
 					<div class="row">
 						<div class="col">
-<!-- 							<p>
-								Earl has been in the IT industry for more than 6 years and has handled various roles. He started out as a Support Specialist, promoted as a Support Analyst (Jr. Business Analyst), shifted and became a Quality Assurance Analyst. He is now pursuing a career in Web Development as a Full Stack Web Developer. Earl is a kid at heart who loves arts and mechatronics. He used to make arts from drawings and engineering, and now, with &lt;/codes&gt;.
-							</p> -->
 						</div>
 					</div>
 				</div>
@@ -63,13 +60,13 @@
 							<span class="h3" style="letter-spacing: -0.075rem; text-shadow: 0 0 4px black;">arts</span>
 						</div>
 						<div class="cont-desc rounded" style="z-index: 1;">	
-							<img class="card-img-top" src="#" alt="">
+							<!-- <img class="card-img-top" src="#" alt=""> -->
 					 		<div class="card-body" >
 								<h5 class="card-title">Arts</h5>
 								<p class="card-text">There are a lot of ways to express oneself. For me, one of such is through arts - design, crafts, photoshop, and phone-tography (photography).</p>
 							</div>
 							<div class="card-footer text-right">
-								<a href="#" class="btn btn-dark btn-sm invert-color">Take a peek!</a>
+								<a href="#arts-modal" data-toggle="modal" class="btn btn-dark btn-sm invert-color">Take a peek!</a>
 								<a href="https://reeto21ph.deviantart.com" target="_blank" class="btn btn-dark btn-sm hover-text-green" title="DeviantArt - reeto21ph"><i class="fab fa-deviantart"></i></a>
 							</div>
 						</div>
@@ -81,7 +78,7 @@
 							<span class="h3" style="letter-spacing: -0.075rem; text-shadow: 0 0 4px black;">mechatronics</span>
 						</div>
 						<div class="cont-desc rounded" style="z-index: 1;">	
-							<img class="card-img-top" src="#" alt="">
+							<!-- <img class="card-img-top" src="#" alt=""> -->
 					 		<div class="card-body" >
 								<h5 class="card-title">Mechatronics</h5>
 								<p class="card-text">It's a thing for me to break things, take out parts, and find out how stuff works. But bigger than that, is to come up with something better.</p>
@@ -98,7 +95,7 @@
 							<span class="h3" style="letter-spacing: -0.075rem; text-shadow: 0 0 4px black;">codes</span>
 						</div>
 						<div class="cont-desc rounded" style="z-index: 1;">	
-							<img class="card-img-top" src="#" alt="">
+							<!-- <img class="card-img-top" src="#" alt=""> -->
 					 		<div class="card-body" >
 								<h5 class="card-title">Codes</h5>
 								<p class="card-text">My coding experience is not limited to web development only. I enjoyed working on microcontrollers as well. Applied such to line-tracing robot, traffic light, to name a few.</p>
@@ -184,20 +181,19 @@
 				</div>
 				<div class="col-12 col-sm-6 col-md p-2 px-4">
 					<div class="row justify-content-center">
-						<span class="text-uppercase text-secondary">Recent Projects</span>
+						<span id="proj-name" class="text-uppercase text-white font-montH">Recent Projects</span>
 					</div>
 					<div class="row justify-content-center pt-2">
 						<div class="col">
 							<div class="row justify-content-center">
 								<div class="col px-1 text-center">
-									<a href="https://earlyshell.github.io/TheSandbox/" target="_blank"><img class="img-fluid proj-prev border rounded border-secondary" src="res/images/sandbox.png"></a>
-									<a href="http://cramless.elementfx.com/" target="_blank"><img class="img-fluid proj-prev border rounded border-secondary" src="res/images/cramless.png"></a>
-									<a href="http://findeee.000webhostapp.com/" target="_blank"><img class="img-fluid proj-prev border rounded border-secondary" src="res/images/findee.png"></a>
+									<a href="https://earlyshell.github.io/TheSandbox/" target="_blank" class="proj-sample" id="sandbox-sample"><img class="img-fluid proj-prev rounded-circle border-secondary" src="res/images/sandbox.png"></a>
+									<a href="http://cramless.elementfx.com/" target="_blank" class="proj-sample" id="cramless-sample"><img class="img-fluid proj-prev rounded-circle border-secondary" src="res/images/cramless.png"></a>
+									<a href="http://findeee.000webhostapp.com/" target="_blank" class="proj-sample" id="findee-sample"><img class="img-fluid proj-prev rounded-circle border-secondary" src="res/images/findee.png"></a>
 								</div>
 							</div>
 						</div>
 					</div>
-					
 					<div class="row justify-content-center pt-3">
 						<div class="text-uppercase text-secondary">
 							<a href="https://reeto21ph.deviantart.com" target="_blank" class="a">DeviantArt</a>
@@ -228,9 +224,8 @@
 							</div>
 							<div class="row justify-content-center pt-2">
 								<span>
-									<a href="https://www.linkedin.com/in/earlhapal" target="_blank" class="text-white"><i class="fab fa-linkedin-in fa-2x px-1"></i></a>
-									<!-- <a href="https://www.linkedin.com/in/earlhapal" target="_blank" class="text-white"><i class="fab fa-deviantart fa-2x px-1 hover-text-green"></i></a> -->
-									<a href="https://www.linkedin.com/in/earlhapal" target="_blank" class="text-white"><i class="fab fa-github fa-2x px-1 glow"></i></a>
+									<a href="https://www.linkedin.com/in/earlhapal" target="_blank" class="text-white" title="LinkedIn - Earl Hapal"><i class="fab fa-linkedin-in fa-2x px-1"></i></a>
+									<a href="https://github.com/earlyshell" target="_blank" class="text-white" title="GitHub - earlyshell"><i class="fab fa-github fa-2x px-1 hover-text-orange"></i></a>
 								</span>
 							</div>
 						</div>
@@ -238,6 +233,111 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- MODALS -->
+		<div class="modal fade" id="arts-modal">
+			<div class="modal-dialog m-0" style="height: 100vh;">
+				<div class="modal-content rounded-0 border-0 h-100" style="width: 100vw;">
+				    <!-- <div class="modal-header border-0 pb-0">
+					    <a class="close" data-dismiss="modal">
+					    	<span aria-hidden="true"><i class="fas fa-times-circle"></i></span>
+					    </a>
+					</div> -->
+					<div id="arts-modal-body" class="modal-body" style="overflow: auto; background-image: url('res/images/sining-bg.png');background-repeat: no-repeat; background-position: 110% 101%; background-size: 40%;">
+						<div class="row px-3 justify-content-center">
+							<span class="modal-title font-deliciousAdventures display-4 text-center" style="text-shadow: 1px 1px 0 lightsalmon" id="sining-title">Sining ni Leet</span>
+						</div>
+					    <div class="row px-3 justify-content-center pt-sm-3">
+					    	<div class="pb-1 col-10 col-sm-8 col-md-6 col-lg-4 border-top border-bottom text-center">
+								<span class="text-center font-italic">a gallery of creativity and expression</span>
+							</div>
+						</div>
+						<div class="container pt-3">
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								<div class="col-12 col-md-6 col-lg-4 p-2 text-center">
+									<img class="img-thumbnail img-fluid" src="res/images/jeepvector.png">
+								</div>
+								
+							</div>
+						</div>
+						<!-- <div class="row px-3 justify-content-center pt-sm-3">
+					    	<div class="pb-1 col-10 col-sm-8 col-md-6 col-lg-4 border-top border-bottom text-center">
+								<span class="text-center font-italic">Grateful, I'd like to share with you my (considerably) art works - a variety of Random Photoshop Collection, Invitation/Tarpaulin/Other Designs, Doodles/Drawings, Phone-tography (Photography), etc. I hope you'll like it.</span>
+							</div>
+						</div> -->
+					</div>
+					<div class="modal-footer justify-content-center">
+						<div class="row w-100">
+							<div class="col text-left font-deliciousAdventures">
+								<span>Sining ni Leet <sub class="font-arial">&copy; 2018</sub></span>
+							</div>
+							<div class="col text-right">
+						    	<a href="https://reeto21ph.deviantart.com" target="_blank" class="arts-footer-btns hover-text-green" title="DeviantArt - reeto21ph"><i class="fab fa-deviantart fa-lg fa-fw"></i></a>
+								<a href="#" id="sining-up-btn" class="arts-footer-btns hover-text-orange" title="Go to Top"><span class="d-inline d-md-none">Top</span><i class="d-none d-md-inline fas fa-arrow-alt-circle-up fa-lg fa-fw"></i></a>
+							    <a href="#arts" class="arts-footer-btns hover-text-tomato" data-dismiss="modal" title="Close"><span class="d-inline d-md-none">Close</span><i class="d-none d-md-inline fas fa-times-circle fa-lg fa-fw"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<script src="res/js/earlrph.js"></script>
 	</body>

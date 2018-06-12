@@ -18,6 +18,11 @@
 	src: url(../fonts/arial.ttf);
 }
 
+@font-face {
+	font-family: DeliciousAdventure;
+	src: url(../fonts/DeliciousAdventures.ttf);
+}
+
 .font-montEL {
 	font-family: Mont-ExtraLight;
 }
@@ -32,6 +37,10 @@
 
 .font-arial {
 	font-family: Arial;
+}
+
+.font-deliciousAdventures {
+	font-family: DeliciousAdventure;
 }
 
 body {
@@ -90,7 +99,7 @@ body {
 .a:focus {
 	color: #007bff;
 	text-decoration: none;
-	transition: 0.3s ease;
+	transition: 0.75s ease;
 }
 
 .a-inv:link,
@@ -125,7 +134,7 @@ body {
 .hover-text-green:hover,
 .hover-text-green:active,
 .hover-text-green:focus {
-	color: green;
+	color: green !important;
 }
 
 .invert-color:hover,
@@ -139,16 +148,22 @@ body {
 	transition: 0.75s ease;
 }
 
-.glow:hover,
-.glow:active,
-.glow:focus {
-	-webkit-filter: invert(100%);
-	-moz-filter: invert(100%);
-	-o-filter: invert(100%);
-	-ms-filter: invert(100%);
-	filter: invert(100%);
-	text-shadow: 0 0 30px black;
+.hover-text-orange:hover,
+.hover-text-orange:active,
+.hover-text-orange:focus {
+	color: orange !important;
 	transition: 0.35s ease;
+}
+
+.hover-text-tomato:hover,
+.hover-text-tomato:active,
+.hover-text-tomato:focus {
+	color: tomato !important;
+	transition: 0.35s ease;
+}
+
+.arts-footer-btns {
+	color: #6c757d;
 }
 
 [id*="car"] {
@@ -279,9 +294,11 @@ body {
 
 .proj-prev:hover {
 	filter: grayscale(0%);
-	
+	filter: saturate(150%);
+	transition: 0.5s ease;
 }
 
 [class*="linkedin"]:hover {
 	color: #0077B5;
+	transition: 0.5s ease;
 }
