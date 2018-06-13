@@ -65,7 +65,7 @@ $('#arts-modal-body').scroll(function(){
 	console.log('Scroll %: ' + $('#arts-modal-body').scrollTop()/(($('#arts-modal-body').prop('scrollHeight')-$('#arts-modal-body').parent().outerHeight())+$('#arts-modal-body + .modal-footer').outerHeight()));
 });
 
-$('#sining-up-btn').click(function(){
+$('.sining-up-btn').click(function(){
     $('#arts-modal-body').animate({
         scrollTop: $("#sining-title").offset().top
     }, 1000);

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
 @font-face {
     font-family: Mont-ExtraLight;
     src: url(../fonts/Mont-ExtraLightDEMO.otf);
@@ -129,6 +131,42 @@ body {
 	text-decoration: none;
 	text-shadow: 0px 0px 2px #aaa;
 	transition: 0.75s ease;
+}
+
+.a-prev:link,
+.a-prev:visited {
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	text-decoration: none;
+}
+
+.a-prev:hover,
+.a-prev:active,
+.a-prev:focus {
+	color: lightsalmon;
+	text-decoration: none;
+	/*text-shadow: 0px 0px 1px #000;*/
+	transition: 0.75s ease;
+}
+
+.prev-item {
+	transition: 0.75s ease;
+}
+
+.info {
+	z-index: 5;
+	opacity: 0;
+	transition: 0.75s ease;
+}
+
+.prev-item:hover .info {
+	transition: 0.75s ease;
+	opacity: 1;
+}
+
+.prev-item:hover img {
+	transition: 0.75s ease;
+	filter: brightness(50%);
 }
 
 .hover-text-green:hover,
@@ -301,4 +339,73 @@ body {
 [class*="linkedin"]:hover {
 	color: #0077B5;
 	transition: 0.5s ease;
+}
+
+.no-gutters {
+	padding: 0 !important;
+}
+
+@media (max-width: 575.98px) {
+	.preview {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.preview {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.preview {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.preview {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.preview {
+		width: 338px;
+		height: 338px;
+	}
+}
+
+@keyframes disappear {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.disappear {
+	animation: disappear 10s ease 0s infinite;
 }
