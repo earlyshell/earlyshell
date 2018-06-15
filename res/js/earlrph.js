@@ -37,6 +37,27 @@ $('.proj-sample').mouseleave(function(){
 	$('#proj-name').html('RECENT PROJECTS');
 });
 
+$('.cred-sample').mouseenter(function(){
+	switch($(this).attr('id')) {
+		case 'awesome-link':
+			$('#cred-name').html('Font Awesome 5');
+			break;
+		case 'bootstrap-link':
+			$('#cred-name').html('Bootstrap 4.1');
+			break;
+		case 'hero-link':
+			$('#cred-name').html('Hero Patterns');
+			break;
+		default:
+			$('#cred-name').html('CREDITS');
+			break;	
+	}
+});
+
+$('.cred-sample').mouseleave(function(){
+	$('#cred-name').html('CREDTIS');
+});
+
 var getModalHeight = function(elem){
 	// console.log($(mbody_id +' > div:nth-child(3)').height());
 	return $(elem +' > div:nth-child(3)').height();
@@ -66,7 +87,7 @@ $('#arts-modal-body').scroll(function(){
 });
 
 $('.sining-up-btn').click(function(){
-    $('#arts-modal-body').animate({
+    $('[id*=-modal-body]').animate({
         scrollTop: $("#sining-title").offset().top
     }, 1000);
 });
