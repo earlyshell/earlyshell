@@ -1,540 +1,1595 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	 		<meta charset="utf-8">
+	        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="RWsx3OHcQmTFkpNudgyvS9bVA71MoaCO6GEQM3YI">
+	        <!-- Title Icon -->
+	        <link rel="shortcut icon" type="image/x-icon" href="">
 
-        <!-- Title Icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="public/icons_leet/earlyshell.ico">
+	        <title>Reeto</title>
 
-        <title>&gt;earlyshell&#95;</title>
+	        <!-- JQuery and PopperJS -->
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Poiret+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+	        <!-- Bootstrap -->
+	        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-        <!-- Bootstrap -->
-        <script src="public/js/app.js"></script>
-        <link href="public/css/app.css" rel="stylesheet">
+	        <!-- Styles -->
+	        <link rel="stylesheet" type="text/css" href="res/css/earlrph.css">
 
-        <!-- Font Awesome -->
-        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	        <!-- Fontawesome -->
+	        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-        <!-- Styles -->
-        <link href="public/css/leet.css" rel="stylesheet">
 
-    </head>
-    <body>
-        <!-- WELCOME SECTION -->
-        <div class="container-fluid">
-            <div class="row full-height align-items-center">
-                <div class="col">
-                    <div class="row">
-                        <h1 class="title font-weight-bold mx-auto text-center">earlyshell</h1>
-                    </div>
-                    <div class="row">
-                        <h3 class="subtitle mx-auto small">
-                            <span class="subtitle-pre">Making Art from</span>
-                            <span class="subtitle-post">&lt;/Codes&gt; and Engineering</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+	        <style>
+	        	/*.row {
+	        		border: 1px solid blue;
+	        	}
+	        	.col {
+	        		border: 1px solid green;
+	        	}*/
+	    	</style>
 
-        <!-- WEBPAGES SECTION -->
-        <div class="container-fluid" page="2" id="2">
-            <div class="row full-height align-items-center">
-                <div class="col my-4">
-                    <div class="row pb-2">
-                        <h1 class="title title-multiline title-p2 font-weight-bold mx-auto px-sm-4 text-center my-sm-4 col-sm-8 col-md-12 col-lg-8 col-xl-7 text-center">created webpages</h1>
-                    </div>
-                    <div class="row mt-4 py-md-4 justify-content-center">
-                        <!-- THE SANDBOX -->
-                        <div id="link-sandbox" class="wp-link">
-                            <a >
-                                <div class="mx-auto text-left p-1 wp-link">                                
-                                    <img class="img-fluid img-thumbnail cwp-thumb charlie-brown circle-thumb" src="public/icons_leet/TheSandbox.png" alt="The Sandbox">
-                                </div>
-                            </a>
-                            <div class="collapse px-3 text-center" id="sandbox-description">
-                                <div class="my-2 my-sm-4 mx-auto col-sm-8 col-xl-8">
-                                    <span class="small">Sandbox is a website for a [non-existent] learning center, The Sandbox, offering IT-related and fun workshops for kids and teens. The Sandbox is every children’s playground to start learning web development (in a fun and enjoyable way) as early as 6 years of age. As the saying goes, <span class="font-italic">“Start ‘em young…”</span>.</span>
-                                </div>
-                                <div class="mb-4 mx-auto align-self-center justify-content-center d-none d-md-block">
-                                    <div class="row mx-auto justify-content-center align-self-center">
-                                        <div class="col-5">
-                                            <div class="row pb-2">
-                                                <div class="col">
-                                                    <img src="public/screens/sandbox_landing_lt.PNG" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="row pt-1">
-                                                <div class="col">
-                                                    <img src="public/screens/sandbox_program_lt.PNG" class="img-fluid">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <img src="public/screens/sandbox_landing_mobile.PNG" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="my-1">
-                                    <a class="btn btn-primary" style="border-radius: 5rem; color: #fff;" href="https://earlyshell.github.io/TheSandbox" target="_blank"><span class="small px-5">The Sandbox</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CRAMLESS -->
-                        <div id="link-cramless" class="wp-link">
-                            <a >
-                                <div class="mx-auto text-center p-1 wp-link">
-                                    <div class="d-flex align-items-center justify-content-center text-center img-thumbnail cwp-thumb mx-auto circle-thumb-grey cramless-bg-grey border-0">
-                                        <span class="fa-stack fa-fw fa-4x" style="right: 0.29rem; top: 0.01rem;"> 
-                                            <i id="hour" class="fas fa-circle-notch fa-stack-2x text-warning" style="opacity: 1; transform: rotate(270deg);"></i>
-                                            <i id="minute" class="fas fa-circle-notch fa-stack-2x text-danger" style="opacity: 0.25; transform: rotate(330deg);"></i>
-                                            <i id="seconds" class="fas fa-share fa-stack-1x text-warning" style="opacity: 1; text-shadow: grey 2px 2px 1px; transform: rotate(186deg);"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="collapse px-3 text-center" id="cramless-description">
-                                <div class="my-2 my-sm-4 mx-auto col-sm-8 col-xl-7">
-                                    <span class="small">Cramless is your last minute print-shop.<br>No more cramming: Maximize your time finishing your printables, and we do the last minute printing for you with our UPD (Upload-Print-Deliver) System.<br><span class="font-weight-bold">Sign up now!</span></span>
-                                </div>
-                                <div class="mb-4 mx-auto align-self-center justify-content-center d-none d-md-block">
-                                    <div class="row mx-auto justify-content-center align-self-center">
-                                        <div class="col-5">
-                                            <div class="row pb-2">
-                                                <div class="col">
-                                                    <img src="public/screens/cramless_printnow_lt.PNG" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="row pt-1">
-                                                <div class="col">
-                                                    <img src="public/screens/cramless_paytoproceed_lt.PNG" class="img-fluid">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <img src="public/screens/cramless_landing_mobile.PNG" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="my-1">
-                                    <a class="btn btn-warning" style="border-radius: 5rem; color: #fff;" href="http://cramless.elementfx.com" target="_blank"><span class="small px-5">Cramless</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- FINDEE -->
-                        <div id="link-findee" class="wp-link">
-                            <a >
-                                <div class="mx-auto text-right p-1 wp-link">
-                                    <div class="mx-auto text-center align-self-center cwp-thumb circle-thumb img-thumbnail border-0">
-                                        <div class="rounded-circle" style="box-shadow: 0 0 1rem 0.1rem skyblue;">
-                                            <img style="width: 6.5rem; height: auto;" src="public/icons_leet/findeeicon.png" alt="Findee">
-                                         </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="collapse px-3 text-center" id="findee-description">
-                                <div class="my-2 my-sm-4 mx-auto col-sm-7 col-xl-7">
-                                    <span class="small">Findee is a game based on the hit puzzles book, Where's Wally (Waldo). You deserve a break.<br><span class="font-weight-bold">Play Now!</span></span>
-                                </div>
-                                <div class="mb-4 mx-auto align-self-center justify-content-center d-none d-md-block">
-                                    <div class="row mx-auto justify-content-center align-self-center">
-                                        <div class="col-5">
-                                            <div class="row pb-2">
-                                                <div class="col">
-                                                    <img src="public/screens/findee_landing_lt.PNG" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="row pt-1">
-                                                <div class="col">
-                                                    <img src="public/screens/findee_game_lt.PNG" class="img-fluid">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <img src="public/screens/findee_landing_mobile.PNG" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="my-1">
-                                    <a class="btn btn-info" style="border-radius: 5rem; color: #fff;" href="http://findeee.000webhostapp.com" target="_blank"><span class="small px-5">Findee</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="mx-auto text-center">
-                            <span id="cw-footer">more to come...</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	</head>
+	<body>
+		<div id="welcome-section" class="container-fluid">
+			<div class="row align-items-center h-100 mx-lg-auto">
+				<div class="col m-3">
+						<img src="res/images/earlrph.png" class="img-fluid mx-auto" style="width: 100%; max-width: 25rem;">
+					<div class="">
+						<span class="" style="letter-spacing: 0.5rem;"><a href="#arts" class="a-welcome">ARTS</a> | <a href="#mechatronics" class="a-welcome">MECHATRONICS</a> | <a href="#codes" class="a-welcome">CODES</a></span>
+					</div>
+				</div>
+				<div class="col m-3">
+					<div class="row">
+						<div class="col">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content-section" class="container-fluid text-white py-2">
+			<div class="row h-100 mx-lg-auto">
+				<div class="col-12 col-md-4 py-2">
+					<div class="card border h-100 card-container" style="background: transparent;" id="arts">
+						<div id="" style="position: absolute; font-family: Queen-Camelot; z-index: 0;" class="h-100 w-100 d-flex align-items-center justify-content-center arts-bg">
+							<span class="h3" style="letter-spacing: -0.075rem; text-shadow: 0 0 4px black;">arts</span>
+						</div>
+						<div class="cont-desc rounded" style="z-index: 1;">	
+							<!-- <img class="card-img-top" src="#" alt=""> -->
+					 		<div class="card-body" >
+								<h5 class="card-title">Arts</h5>
+								<p class="card-text">There are a lot of ways to express oneself. For me, one of such is through arts - design, crafts, photoshop, and phone-tography (photography).</p>
+							</div>
+							<div class="card-footer text-right">
+								<a href="#arts-modal" data-toggle="modal" class="btn btn-dark btn-sm invert-color">Take a peek!</a>
+								<a href="https://reeto21ph.deviantart.com" target="_blank" class="btn btn-dark btn-sm hover-text-green" title="DeviantArt - reeto21ph"><i class="fab fa-deviantart"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 py-2">
+					<div class="card border h-100 card-container" style="background: transparent;" id="mechatronics">
+						<div id="" style="position: absolute; font-family: Queen-Camelot; z-index: 0;" class="h-100 w-100 d-flex align-items-center justify-content-center graph-bg">
+							<span class="h3" style="letter-spacing: -0.075rem; text-shadow: 0 0 4px black;">mechatronics</span>
+						</div>
+						<div class="cont-desc rounded" style="z-index: 1;">	
+							<!-- <img class="card-img-top" src="#" alt=""> -->
+					 		<div class="card-body" >
+								<h5 class="card-title">Mechatronics</h5>
+								<p class="card-text">It's a thing for me to break things, take out parts, and find out how stuff works. But bigger than that, is to come up with something better.</p>
+							</div>
+							<div class="card-footer text-right">
+								<a href="#mechatronics-modal" data-toggle="modal" class="btn btn-dark btn-sm invert-color">The engineer in me...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 py-2">
+					<div class="card border h-100 card-container" style="background: transparent;" id="codes">
+						<div id="" style="position: absolute; font-family: Queen-Camelot; z-index: 0;" class="h-100 w-100 d-flex align-items-center justify-content-center diagonal-bg">
+							<span class="h3" style="letter-spacing: -0.075rem; text-shadow: 0 0 4px black;">codes</span>
+						</div>
+						<div class="cont-desc rounded" style="z-index: 1;">	
+							<!-- <img class="card-img-top" src="#" alt=""> -->
+					 		<div class="card-body" >
+								<h5 class="card-title">Codes</h5>
+								<p class="card-text">My coding experience is not limited to web development only. I enjoyed working on microcontrollers as well. Applied such to line-tracing robot, traffic light, to name a few.</p>
+							</div>
+							<div class="card-footer text-right">
+								<a href="#dev-modal" data-toggle="modal" class="btn btn-dark btn-sm invert-color">Let's go!</a>
+								<a href="https://github.com/earlyshell" target="_blank" class="btn btn-dark btn-sm invert-color" title="GitHub - earlyshell"><i class="fab fa-github-alt"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- OTHER WORKS SECTION -->
-        <div class="container-fluid" page="3" id="3">
-            <div class="row full-height align-items-center">
-                <div class="col my-4">
-                    <div class="row pb-2">
-                        <!-- <h1 class="title title-multiline title-p2 font-weight-bold mx-auto px-sm-4 text-center my-lg-4 col-lg-6">created webpages</h1> -->
-                        <h1 class="title title-multiline title-p3 font-weight-bold mx-auto text-center px-sm-4 text-center mt-sm-4 col-sm-6 col-xl-5">related works</h1>
-                    </div>
-                    <div class="row">
-                        <h3 class="subtitle subtitle-p2 mx-auto small">
-                            <span class="text-upper">Design | Electronics | Photoshop | Phonetography</span>
-                        </h3>
-                    </div>
-                    <div class="row mt-4">
-                        <div id="carouselIndicators" class="col-12 carousel slide othcar-misc d-md-none" data-ride="carousel">
-                            <!-- <ol class="carousel-indicators">
-                                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                                <li data-target="#carouselIndicators" data-slide-to="3"></li>
-                            </ol> -->
-                            <div class="carousel-inner mx-auto">
-                                <div class="carousel-item text-center active">
-                                    <a href="https://reeto21ph.deviantart.com/art/Culture-meets-Negative-Cambers-739573327" target="_blank">
-                                        <img src="https://img00.deviantart.net/4f17/i/2018/099/b/4/culture_meets_negative_cambers_by_reeto21ph-dc8bmfj.jpg" alt="Culture Meets (-) Cambers" title="Culture Meets Negative Cambers" class="img-fluid othwork-img" style="">
-                                    </a>
-                                </div>
-                                <div class="carousel-item text-center">
-                                    <a href="https://reeto21ph.deviantart.com/art/V-GND-Receive-Transmit-739575042" target="_blank">
-                                        <img src="https://img00.deviantart.net/55ae/i/2018/099/e/9/v__gnd_receive_transmit_by_reeto21ph-dc8bnr6.jpg" alt="V+ GND Receive Transmit" title="V+ GND Receive Transmit" class="img-fluid othwork-img" style="">
-                                    </a>
-                                </div>
-                                <div class="carousel-item text-center">
-                                    <a href="https://reeto21ph.deviantart.com/art/Zumba-Poster-Empire-Boxing-Pasig-739588365" target="_blank">
-                                        <img src="https://img00.deviantart.net/cf6a/i/2018/099/6/b/zumba_poster___empire_boxing_pasig_by_reeto21ph-dc8by19.png" alt="Empire Woot! Woot! Shake!" title="Empire Pasig - Zumba" class="img-fluid othwork-img" style="">
-                                    </a>
-                                </div>
-                                <div class="carousel-item text-center">
-                                    <a href="https://reeto21ph.deviantart.com/art/Off-Season-739583032" target="_blank">
-                                        <img src="https://img00.deviantart.net/3486/i/2018/099/c/6/off_season_by_reeto21ph-dc8btx4.jpg" alt="Off-season" title="Off-season" class="img-fluid othwork-img" style="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-10 mx-auto px-5 d-none d-md-block">
-                            <div class="row px-lg-5 justify-content-center">
-                                <div class="col align-self-end justify-content-end pr-0 text-right">
-                                    <a href="https://reeto21ph.deviantart.com/art/Culture-meets-Negative-Cambers-739573327" target="_blank">
-                                        <img src="https://img00.deviantart.net/4f17/i/2018/099/b/4/culture_meets_negative_cambers_by_reeto21ph-dc8bmfj.jpg" alt="Culture Meets (-) Cambers" title="Culture Meets Negative Cambers" class="img-fluid othwork-img pt-xl-4" style="">
-                                    </a>
-                                </div>
-                                <div class="col align-self-end justify-content-start pl-0 text-left">
-                                    <a href="https://reeto21ph.deviantart.com/art/V-GND-Receive-Transmit-739575042" target="_blank">
-                                        <img src="https://img00.deviantart.net/55ae/i/2018/099/e/9/v__gnd_receive_transmit_by_reeto21ph-dc8bnr6.jpg" alt="V+ GND Receive Transmit" title="V+ GND Receive Transmit" class="img-fluid othwork-img pr-4" style="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row px-lg-5 justify-content-center">
-                                <div class="col align-self-start justify-content-end pr-0 text-right">
-                                    <a href="https://reeto21ph.deviantart.com/art/Zumba-Poster-Empire-Boxing-Pasig-739588365" target="_blank">
-                                        <img src="https://img00.deviantart.net/cf6a/i/2018/099/6/b/zumba_poster___empire_boxing_pasig_by_reeto21ph-dc8by19.png" alt="Empire Woot! Woot! Shake!" title="Empire Pasig - Zumba" class="img-fluid othwork-img pl-4" style="">
-                                    </a>
-                                </div>
-                                <div class="col align-self-start justify-content-start pl-0 text-left">
-                                    <a href="https://reeto21ph.deviantart.com/art/Off-Season-739583032" target="_blank">
-                                        <img src="https://img00.deviantart.net/3486/i/2018/099/c/6/off_season_by_reeto21ph-dc8btx4.jpg" alt="Off-season" title="Off-season" class="img-fluid othwork-img pb-xl-4" style="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-12">
-                            <div class="mx-auto text-center othwork-thumb m-1">
-                                <a href="https://reeto21ph.deviantart.com/art/Culture-meets-Negative-Cambers-739573327" target="_blank">
-                                    <img src="https://img00.deviantart.net/4f17/i/2018/099/b/4/culture_meets_negative_cambers_by_reeto21ph-dc8bmfj.jpg" alt="Culture Meets (-) Cambers" title="Culture Meets Negative Cambers" class="img-fluid othwork-img" style="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mx-auto text-center othwork-thumb m-1">
-                                <a href="https://reeto21ph.deviantart.com/art/V-GND-Receive-Transmit-739575042" target="_blank">
-                                    <img src="https://img00.deviantart.net/55ae/i/2018/099/e/9/v__gnd_receive_transmit_by_reeto21ph-dc8bnr6.jpg" alt="V+ GND Receive Transmit" title="V+ GND Receive Transmit" class="img-fluid othwork-img" style="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mx-auto text-center othwork-thumb m-1">
-                                <a href="https://reeto21ph.deviantart.com/art/Zumba-Poster-Empire-Boxing-Pasig-739588365" target="_blank">
-                                    <img src="https://img00.deviantart.net/cf6a/i/2018/099/6/b/zumba_poster___empire_boxing_pasig_by_reeto21ph-dc8by19.png" alt="Empire Woot! Woot! Shake!" title="Empire Pasig - Zumba" class="img-fluid othwork-img" style="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mx-auto text-center othwork-thumb m-1">
-                                <a href="https://reeto21ph.deviantart.com/art/Off-Season-739583032" target="_blank">
-                                    <img src="https://img00.deviantart.net/3486/i/2018/099/c/6/off_season_by_reeto21ph-dc8btx4.jpg" alt="Off-season" title="Off-season" class="img-fluid othwork-img" style="">
-                                </a>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="row mt-4 mb-3">
-                        <div class="mx-auto text-center">
-                            <span>
-                                <a class="btn btn-outline-secondary" title="reeto21ph.deviantart.com" href="https://reeto21ph.deviantart.com/" target="_blank" style="border-radius: 5rem;">
-                                    <i class="fab fa-deviantart" style="color: #05cc47;"></i><span class="font-weight-bold">&nbsp;reeto21ph</span>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col col-sm-6 mx-auto text-center">
-                            <div class="w-100">
-                                <span class="small">Some Engineering Projects</span>
-                            </div>
-                            <div class="badge badge-primary">
-                                <a href="https://www.facebook.com/media/set/?set=a.91512831097.104293.527436097&type=1&l=20f69966b5" target="_blank"><span class="text-white">Microcontrollers + Controls Eng'g Activities</span></a>
-                            </div>
-                            <div class="badge badge-info">
-                                <a href="https://www.facebook.com/media/set/?set=a.91505966097.104291.527436097&type=1&l=28fffbcfe3" target="_blank"><span class="text-white">Line Tracing Robot</span></a>
-                            </div>
-                            <div class="badge badge-warning">
-                                <a href="https://www.facebook.com/media/set/?set=a.144307011097.136987.527436097&type=1&l=9958d9ed29" target="_blank"><span class="text-dark">CATIA - CAD I</span></a>
-                            </div>
-                            <div class="badge badge-warning">
-                                <a href="https://www.facebook.com/media/set/?set=a.148188936097.139042.527436097&type=1&l=dac64dbc2e" target="_blank"><span class="text-dark">CATIA - CAD II</span></a>
-                            </div>
-                            <!-- <img src="https://scontent.fmnl2-1.fna.fbcdn.net/v/t1.0-9/10400252_91513926097_2187155_n.jpg?_nc_cat=0&oh=ecc67cd01b6935511f4ac478b1224941&oe=5B58901B"> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<footer id="footer-section" class="container-fluid text-white py-2 px-0" style="overflow-x: hidden;">
+			<div class="row mx-lg-auto align-items-end" style="height: 100px; background-image: url('res/images/footerbg.png'); background-size: contain; background-repeat: repeat-x;">
+				<div id="assy1">
+					<img id="car1" src="res/images/car_1.png" style="">
+					<img class="wheelf faster-spin" src="res/images/wheel_1.png" style="">
+					<img class="wheelb faster-spin" src="res/images/wheel_1.png" style="">
+				</div>
+				<div id="assy2">
+					<img id="car2" src="res/images/car_2.png" style="">
+					<img class="wheelf faster-spin" src="res/images/wheel_2.png" style="">
+					<img class="wheelb faster-spin " src="res/images/wheel_2.png" style="">
+				</div>
+			</div>
+			<div class="row h-100 mx-lg-auto my-3 mx-2">
+				<div class="col-12 col-sm-6 col-md p-2 px-4" id="about-container">
+					<div class="row justify-content-center px-4">
+						<span class="h5 text-uppercase font-montH mb-0 text-center text-md-left w-100">Earl Hapal <span class="small text-secondary">2018</span></span>
+					</div>
+					<div class="row justify-content-center px-4">
+						<div class="col">
+							<div class="row">
+								<div class="collapse show pt-2" id="about" data-parent="#about-container">
+									<p class="text-center text-md-left">Earl has been in the IT industry for more than 6 years and has handled various roles -  Support Specialist, Support Analyst (Jr. Business Analyst), Quality Assurance Analyst. He is now pursuing a career in Web Development as a <span class="text-secondary">Full-stack Web Developer</span> or <span class="text-secondary">Front-end Web Developer/Web Designer</span>. Earl is a kid at heart who loves arts and mechatronics. He creates arts with drawings, designs, engineering, and now, with codes.</p>
+								</div>
+								<div class="pt-2 collapse mx-auto mx-md-0" id="skills" data-parent="#about-container">
+									<div class="col">
+										<div class="row">
+											<span class="text-secondary text-center text-md-left w-100 font-weight-bold">Beginner</span>
+										</div>
+										<div class="row">
+											<ul class="list-unstyled w-100 text-center text-md-left">
+												<li>Laravel</li>
+												<li>Java</li>
+											</ul>
+										</div>
+										
+										<div class="row">
+											<span class="text-secondary text-center text-md-left w-100 font-weight-bold">Intermediate</span>
+										</div>
+										<div class="row">
+											<ul class="list-unstyled w-100 text-center text-md-left">
+												<li>C/C++ <span class="badge badge-secondary">Microcontrollers</span></li>
+												<li>Javascript <span class="badge badge-light">Vanilla</span> <span class="badge badge-primary">JQuery</span></li>
+												<li>Javascript <span class="badge badge-info">AJAX</span> <span class="badge badge-info">JSON</span></li>
+												<li>PHP</li>
+											</ul>
+										</div>
 
-        <!-- MAIN -->
-        <div class="container-fluid" page="4" id="4">
-            <div class="row full-height align-items-center">
-                <div class="col my-4">
-                    <div class="row pb-2">
-                        <h1 class="title title-multiline title-p4 font-weight-bold mx-auto text-center text-success mt-sm-4" style="word-spacing: -1rem;">earl hapal</h1>
-                    </div>
-                    <div class="row mt-3 mt-md-4">
-                        <h3 class="subtitle mx-auto small mb-0">
-                            <span class="text-upper">Engineer | Support Specialist | Support Analyst | QA Analyst</span>
-                        </h3>
-                    </div>
-                    <div class="row">
-                        <h3 class="subtitle mx-auto">
-                            <span class="text-upper font-weight-bold">FULL-STACK WEB DEVELOPER</span>
-                        </h3>
-                    </div>
-                    <div class="row my-2">
-                        <div class="col mx-auto text-center">
-                            <img src="public/icons_leet/EHapal.jpg" alt="Earl" class="img-thumbnail p-1 shadow rounded-0 prof-pic-size">
-                        </div>
-                    </div>
-                    <div id="eh-info">
-                        <div class="row mt-2">
-                            <div class="col mx-auto text-center">
-                                <a id="eh-description-btn" class="mx-2 text-info" data-toggle="collapse">
-                                    <i class="fas fa-info-circle fa-2x"></i>
-                                </a>
-                                <a id="eh-skills-btn" class="mx-2 text-warning" data-toggle="collapse">
-                                    <i class="fas fa-code fa-2x"></i>
-                                </a>
-                                <a id="eh-almamater-btn" class="mx-2 text-secondary" data-toggle="collapse">
-                                    <i class="fas fa-graduation-cap fa-2x"></i>
-                                </a>
-                                <a id="eh-links-btn" class="mx-2 text-primary" data-toggle="collapse">
-                                    <i class="fas fa-link fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col col-sm-9 mx-auto collapse show my-2" id="eh-description">
-                                <p class="small text-center px-3 desc-md desc-lg col-lg-9 col-xl-7 mx-lg-auto">
-                                    Earl has been in the IT industry for more than 6 years and has handled various roles. He started out as a Support Specialist, promoted as a Support Analyst (Jr. Business Analyst), shifted and became a Quality Assurance Analyst. He is now pursuing a career in Web Development as a Full Stack Web Developer. Earl is a kid at heart who loves arts and mechatronics. He now makes art from &lt;/codes&gt; and engineering
-                                </p>
-                            </div>
-                            <div class="col collapse my-2" id="eh-skills">
-                                <div class="px-3">
-                                     <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-success font-weight-normal">advanced</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>HTML/CSS</span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-primary font-weight-normal">intermediate</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>Javascript (+ jQuery)</span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-primary font-weight-normal">intermediate</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>PHP</span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-success font-weight-normal">advanced</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>mySQL</span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-info font-weight-normal">beginner</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>Java</span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-primary font-weight-normal">intermediate</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>C++ <span class="small">(Microcontrollers)</span></span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-info font-weight-normal">beginner</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>Laravel</span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-success font-weight-normal">advanced</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>Bootstrap (3, 4)</span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-success font-weight-normal">advanced</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>Design/Photoshop</span>
-                                        </div>  
-                                    </div>
-                                    <div class="row mx-auto">
-                                        <div class="col text-right px-1">
-                                            <span class="badge badge-success font-weight-normal">advanced</span>
-                                        </div>
-                                        <div class="col text-left px-1">
-                                            <span>Desktop Publishing</span>
-                                        </div>  
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col collapse my-2" id="eh-links">
-                                <div class="mx-auto text-center my-2">
-                                    <div class="row mx-auto text-center justify-content-center">
-                                    
-                                    <div class="col-auto col-sm-12 align-self-center px-1">
-                                        <a href="https://www.linkedin.com/in/earlhapal" target="_blank"><span><i class="fab fa-linkedin fa-fw fa-3x" style="color:#0077B5;" title="Earl Hapal"></i></span></a>
-                                    </div>
-                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
-                                        <div class="row text-center align-self-center justify-content-center"><a href="https://www.linkedin.com/in/earlhapal" target="_blank" class="text-secondary">Earl Hapal</a></div> 
-                                    </div>
+										<div class="row">
+											<span class="text-secondary text-center text-md-left w-100 font-weight-bold">Advanced</span>
+										</div>
+										<div class="row">
+											<ul class="list-unstyled w-100 text-center text-md-left">
+												<li>Bootstrap <span class="badge badge-primary">3</span> <span class="badge badge-primary">4</span></li>
+												<li>CSS <span class="badge badge-info">CSS3</span></li>
+												<li>HTML <span class="badge badge-info">HTML5</span></li>
+												<li>SQL <span class="badge badge-primary">MySQL</span></li>
+												<li>Design/Photoshop</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<span class="text-uppercase text-center text-md-left w-100 mb-0"><a href="#about" data-toggle="collapse" class="a" id="about-btn">About</a> <span class="font-arial font-weight-light">I</span> <a href="#skills" data-toggle="collapse" class="a-inv" id="skills-btn">Web Dev Skills</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md p-2 px-4">
+					<div class="row justify-content-center">
+						<span id="proj-name" class="text-uppercase text-white font-montH">Recent Projects</span>
+					</div>
+					<div class="row justify-content-center pt-2">
+						<div class="col">
+							<div class="row justify-content-center">
+								<div class="col px-1 text-center">
+									<a href="https://earlyshell.github.io/TheSandbox/" target="_blank" class="proj-sample" id="sandbox-sample"><img class="img-fluid proj-prev rounded-circle border-secondary" src="res/images/sandbox.png"></a>
+									<a href="http://cramless.elementfx.com/" target="_blank" class="proj-sample" id="cramless-sample"><img class="img-fluid proj-prev rounded-circle border-secondary" src="res/images/cramless.png"></a>
+									<a href="http://findeee.000webhostapp.com/" target="_blank" class="proj-sample" id="findee-sample"><img class="img-fluid proj-prev rounded-circle border-secondary" src="res/images/findee.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center pt-3">
+						<div class="text-uppercase text-secondary">
+							<a href="https://reeto21ph.deviantart.com" target="_blank" class="a">DeviantArt</a>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="text-uppercase text-secondary">
+							<a href="#mechatronics-modal" target="_blank" class="a" data-toggle="modal">Mechatronics</a>
+						</div>
+					</div>
+					<div class="row justify-content-center pt-3 pb-1">
+						<span id="cred-name" class="text-uppercase text-white font-montH">CREDITS</span>
+					</div>
+					<div class="row justify-content-center">
+						<div class="text-uppercase text-secondary">
+							<div class="row">
+	                            <div class="col px-1">
+	                            	<a href="https://fontawesome.com/" target="_blank" class="proj-prev cred-sample" id="awesome-link"><i class="fab fa-font-awesome fa-3x" data-transform="shrink-2"></i></a>
+	                            </div>
+	                            <div class="col px-1">
+		                            <a href="https://getbootstrap.com/" target="_blank" class="proj-prev cred-sample" id="bootstrap-link"><img class="img-fluid mb-3 mb-md-0" src="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png" alt="" style="height: 38px;"></a>
+		                        </div>
+								<div class="col px-1">
+									<a href="https://www.heropatterns.com/" target="_blank" class="proj-prev cred-sample" id="hero-link"><svg width="34" height="35" viewBox="0 0 34 35" xmlns="http://www.w3.org/2000/svg">
+		                                    <path d="M20 12.5V16h-6V0h-4v16H6v.07c-3.392.486-6 3.404-6 6.93s2.608 6.444 6 6.93V30h8V20h6v16h4V20h3c3.866 0 7-3.134 7-7s-3.134-7-7-7h-7v6.5zM4 23c0-1.657 1.347-3 3-3h3v6H7c-1.657 0-3-1.347-3-3zm26-10c0 1.657-1.347 3-3 3h-3v-6h3c1.657 0 3 1.347 3 3z" fill="#9179BA" fill-rule="evenodd"></path>
+		                                </svg></a>
+	                            </div>
+	                        </div>
+						</div>
+						<div class="text-uppercase text-secondary">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md p-2 px-4">
+					<div class="row">
+						<div class="col">
+							<div class="row justify-content-center">
+								<span class="h1 font-montH mb-0">Hire <a href="https://drive.google.com/file/d/1r4rhCPt46qURUNEBTq73QD6j8joiyKXu/view?usp=sharing" target="_blank" class="a-me" title="Download Earl's Resume">me</a>!</span>
+							</div>
+							<div class="row justify-content-center">
+								<span>Manila, Philippines</span>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-auto px-1">
+									<span><a href="mailto:hapal.earl.p@gmail.com" class="a-footer">hapal.earl.p@gmail.com</a></span>
+								</div>
+								<div class="col-auto px-1">
+									<span>639395222413</span>
+								</div>
+							</div>
+							<div class="row justify-content-center pt-2">
+								<span>
+									<a href="https://www.linkedin.com/in/earlhapal" target="_blank" class="text-white" title="LinkedIn - Earl Hapal"><i class="fab fa-linkedin-in fa-2x px-1"></i></a>
+									<a href="https://github.com/earlyshell" target="_blank" class="text-white" title="GitHub - earlyshell"><i class="fab fa-github fa-2x px-1 hover-text-orange"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-                                    <div class="w-100 d-none d-sm-block"></div>
+		<!-- MODALS -->
+		<!-- ARTS -->
+		<div class="modal fade" id="arts-modal">
+			<div class="modal-dialog m-0" style="height: 100vh;">
+				<div class="modal-content rounded-0 border-0 h-100" style="width: 100vw;">
+				    <!-- <div class="modal-header border-0 pb-0">
+					    <a class="close" data-dismiss="modal">
+					    	<span aria-hidden="true"><i class="fas fa-times-circle"></i></span>
+					    </a>
+					</div> -->
+					<div id="arts-modal-body" class="modal-body" style="overflow: auto; background-image: url('res/images/sining-bg.png');background-repeat: no-repeat; background-position: 110% 101%; background-size: 40%;">
+						<div class="row px-3 justify-content-center">
+							<span class="modal-title font-deliciousAdventures display-4 text-center" style="text-shadow: 1px 1px 0 lightsalmon" id="sining-title">Sining ni Leet</span>
+						</div>
+					    <div class="row px-3 justify-content-center pt-sm-3">
+					    	<div class="pb-1 col-10 col-sm-8 col-md-6 col-lg-4 border-top border-bottom text-center">
+								<span class="text-center font-italic">a gallery of creativity and expression</span>
+							</div>
+						</div>
+						<div class="container pt-3 mb-5">
+							<div class="row justify-content-center">
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Yellow-739582626" target="_blank" class="a-prev"><span class="h5">Yellow</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Captured with Lenovo S90</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-danger">Flowers</span> <span class="badge badge-light">Phone-tography</span></span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/1.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Orangered-II-739579210" target="_blank" class="a-prev"><span class="h5">Orangered II</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Captured with Lenovo S90</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-danger">Flowers</span> <span class="badge badge-light">Phone-tography</span></span>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="col-auto col-sm-12 align-self-center px-1">
-                                        <a href="https://reeto21ph.deviantart.com" target="_blank"><span><i class="fab fa-deviantart fa-fw fa-3x" style="color: green;" title="reeto21ph"></i></span></a>
-                                    </div>
-                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
-                                        <div class="row text-center align-self-center justify-content-center"><a href="https://reeto21ph.deviantart.com" target="_blank" class="text-secondary">reeto21ph</a></div>
-                                    </div>
+									<img class="img-fluid preview" src="res/images/devart/6.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Anti-stress-Stick-739580350" target="_blank" class="a-prev"><span class="h5">Anti-stress Stick</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Captured with Lenovo S90</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-dark">Random</span> <span class="badge badge-light">Phone-tography</span></span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/2.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Gold-s-Christening-Tarpaulin-739568410" target="_blank" class="a-prev"><span class="h5">Gold's Christening Tarpaulin</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Prepared using Adobe Photoshop CS3</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-info">Designs</span> <span class="badge badge-warning">Tarpaulin</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/9.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Audrey-s-Christening-Tarpaulin-739568783" target="_blank" class="a-prev"><span class="h5">Audrey's Christening Tarpaulin</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Prepared using Adobe Photoshop CS3</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-info">Designs</span> <span class="badge badge-warning">Tarpaulin</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview disappear position-absolute" src="res/images/devart/3.jpg">
+									<img class="img-fluid preview" src="res/images/devart/12.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/V-GND-Receive-Transmit-739575042" target="_blank" class="a-prev"><span class="h5">V+ GND Receive Transmit</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Captured with Lenovo S90</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-light">Phone-tography</span> <span class="badge badge-success">Tech</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/13.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/End-Of-Day-739577566" target="_blank" class="a-prev"><span class="h5">End of Day</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Captured with Lenovo S90</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-light">Phone-tography</span> <span class="badge badge-primary">Landscape</span> <span class="badge badge-warning">Sunset</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/4.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Off-Season-739583032" target="_blank" class="a-prev"><span class="h5">Off Season</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Captured with Lenovo S90. Edited with Snapseed.</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-light">Phone-tography</span> <span class="badge badge-primary">Landscape</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/5.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Zumba-Poster-Empire-Boxing-Pasig-739588365" target="_blank" class="a-prev"><span class="h5">Zumba - Empire Boxing Pasig</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Prepared using Adobe Photoshop CS3</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-info">Designs</span> <span class="badge badge-light">Poster</span> <span class="badge badge-primary">Social Media</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/7.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Christmas-Vouchers-739587793" target="_blank" class="a-prev"><span class="h5">Christmas Vouchers 2017</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Prepared using Adobe Photoshop CS3</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-info">Designs</span> <span class="badge badge-light">Poster</span> <span class="badge badge-primary">Social Media</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/11.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/TransAm-739573594" target="_blank" class="a-prev"><span class="h5">TransAm</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">For the love of drawing and doodles, TransAM!</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-secondary">Doodle</span> <span class="badge badge-warning">Cars</span></span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/8.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://reeto21ph.deviantart.com/art/Culture-meets-Negative-Cambers-739573327" target="_blank" class="a-prev"><span class="h5">Culture meets Negative Cambers</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">A doodle produced by my "what-ifs", Negative Cambers - The Lazy Jeep!</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-secondary">Doodle</span> <span class="badge badge-warning">Cars</span></span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/10.jpg">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="#" class="a-prev"><span class="h5 text-white">SF Builders & Gaming Corp</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Prepared using Adobe Photoshop CS3. Proposed logo for SF Builders and Gaming Corp. Status: Pending</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-info">Designs</span> <span class="badge badge-primary">Logo</span> <span class="badge badge-danger">Proposal</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview" src="res/images/devart/14.png">
+								</div>
+								<div class="border prev-item">
+									<div class="position-absolute info preview">
+										<div class="position-absolute text-right w-100" style="bottom: 1rem;">
+											<div class="row justify-content-end px-4">
+												<a href="#" class="a-prev"><span class="h5 text-white">Abramazing Tours</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Prepared using Adobe Photoshop CS3. Proposed logos for Abramazing Tours. Status: Mountain was revised</span>
+											</div>
+											<div class="row justify-content-end px-4">
+												<span><span class="badge badge-info">Designs</span> <span class="badge badge-primary">Logo</span> <span class="badge badge-danger">Proposal</span><span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview disappear position-absolute" src="res/images/devart/15.png">
+									<img class="img-fluid preview" src="res/images/devart/16.png">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer justify-content-center">
+						<div class="row w-100">
+							<div class="col text-left font-deliciousAdventures">
+								<span>Sining ni Leet <sub class="font-arial">&copy; 2018</sub></span>
+							</div>
+							<div class="d-none d-lg-block col text-right">
+						    	<a href="https://reeto21ph.deviantart.com" target="_blank" class="arts-footer-btns hover-text-green" title="DeviantArt - reeto21ph"><i class="fab fa-deviantart fa-lg fa-fw"></i></a>
+								<a href="#" class="sining-up-btn arts-footer-btns hover-text-orange" title="Go to Top"><span class="d-inline d-md-none">Top</span><i class="fas fa-arrow-alt-circle-up fa-lg fa-fw"></i></a>
+							    <a href="#arts" class="arts-footer-btns hover-text-tomato" data-dismiss="modal" title="Close"><span class="d-inline d-md-none">Close</span><i class="fas fa-times-circle fa-lg fa-fw"></i></a>
+							</div>
+							<div class="d-block d-lg-none col text-right">
+						    	<a href="https://reeto21ph.deviantart.com" target="_blank" class="d-none d-sm-inline arts-footer-btns hover-text-green text-uppercase small" title="DeviantArt - reeto21ph">reeto21ph</a> <span class="d-none d-sm-inline font-arial font-weight-light small px-1">I</span>
+								<a href="#" class="sining-up-btn arts-footer-btns hover-text-orange text-uppercase small" title="Go to Top">top</a> <span class="font-arial font-weight-light small px-1">I</span>
+							    <a href="#arts" class="arts-footer-btns hover-text-tomato text-uppercase small" data-dismiss="modal" title="Close">close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                                    <div class="w-100 d-none d-sm-block"></div>
+		<!-- MECHATRONICS -->
+		<div class="modal fade" id="mechatronics-modal">
+			<div class="modal-dialog m-0" style="height: 100vh;">
+				<div class="modal-content rounded-0 border-0 h-100 circuit-bg" style="width: 100vw;">
+					<div id="mechatronics-modal-body" class="modal-body" style="overflow: auto;">
+						<div class="row px-3 justify-content-center">
+							<span class="modal-title font-montH h1 text-center" style="text-shadow: 1px 1px 0 darkviolet;" id="mech-title"><!-- <i class="fas fa-cogs fa-1x"></i> -->Earl-<span class="d-none d-md-inline">gineering</span><span class="d-md-none">ng'g</span>&nbsp;<i class="fas fa-robot fa-lg d-none d-md-inline"></i></span>
+						</div>
 
-                                    <div class="col-auto col-sm-12 align-self-center px-1">
-                                        <a href="https://github.com/earlyshell" target="_blank"><span><i class="fab fa-github-square fa-fw fa-3x" style="color: black;" title="reeto21ph"></i></span></a>
-                                    </div>
-                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
-                                        <div class="row text-center align-self-center justify-content-center"><a href="https://github.com/earlyshell" target="_blank" class="text-secondary">earlyshell</a></div>
-                                    </div>
+						<div class="row justify-content-center">
+							<ul class="nav nav-pills" id="mech-pills">
+								<li class=""><a href="#robot-tab" data-toggle="pill" class="mech-pill color-dgray active arts-footer-btns hover-text-dviolet px-1 text-uppercase">Robots</a></li>
+								<span class="font-arial font-weight-light">I</span>
+								<li class=""><a href="#microcontrollers-tab" data-toggle="pill" class="mech-pill color-dgray sining-up-btn arts-footer-btns hover-text-dviolet px-1 text-uppercase">Microcontrollers</a></li>
+								<span class="font-arial font-weight-light">I</span>
+								<li class=""><a href="#cad-tab" data-toggle="pill" class="mech-pill color-dgray hover-text-dviolet px-1 text-uppercase">CAD/Catia</a></li>
+							</ul>
+						</div>
 
-                                    <div class="w-100 d-none d-sm-block"></div>
+						<div class="container pt-3 mb-5">
+							<div class="tab-content">
+								<div class="tab-pane fade active show" id="robot-tab">
+									<div class="container">
+										<div class="row justify-content-center">
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-img-top">
+														<img class="img-fluid rounded-top" src="res/images/mech/humanoid/humanoid_card_disp.jpg">
+													</div>
+													<div class="card-body">
+														<h5 class="card-title"><a href="#hr-proper" data-toggle="collapse" class="prev-btn a hover-text-dviolet font-montH">Humanoid Robot</a></h5>
+														<p class="card-text">Robots, eh? This product was made for educational purposes - a thesis, back in college, which demonstrates application of concepts relating to robotics such as kinematics, certain mathe ...</p>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-right">
+																<a href="#hr-proper" class="btn btn-dark btn-sm text-right prev-btn" id="hr-btn" data-toggle="collapse">View</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-img-top">
+														<img class="img-fluid rounded-top" src="res/images/mech/mobot/mobot_card_disp.jpg">
+													</div>
+													<div class="card-body">
+														<h5 class="card-title"><a href="#lr-proper" data-toggle="collapse" class="prev-btn a hover-text-dviolet font-montH">Line-tracing Robot</a></h5>
+														<p class="card-text">Part of the cool things that we do, back in college, is this - a line-tracing robot. This project is basically an application of our lessons in microcontrollers. For this example, we us ...</p>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-right">
+																<a href="#lr-proper" class="btn btn-dark btn-sm text-right prev-btn" id="mobot-btn" data-toggle="collapse">View</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-img-top">
+														<img class="img-fluid rounded-top" src="res/images/mech/humanoid/humanoid_card_disp_v2.jpg">
+													</div>
+													<div class="card-body">
+														<h5 class="card-title"><a href="#" class="a hover-text-dviolet font-montH">Humanoid Robot v2</a></h5>
+														<p class="card-text">If you're excited in this project, so do I. Unfortunately, I'm gonna need a job first so this hobby can be funded. ;)</p>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-right">
+																<a href="#" class="btn btn-dark btn-sm text-right disabled prev-btn" id="hrv2-btn">Pending</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 py-3 collapse" id="hr-proper">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-header">
+														<div class="row">
+															<div class="col">
+																<div class="h4">Humanoid Robot <span class="text-secondary small font-montH">2011</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Description</a></h5>
+															<p class="card-text">Robots, eh? This product was made for educational purposes - a thesis, back in college, which demonstrates application of concepts relating to robotics such as kinematics, certain mathematical models, COG (weight management), etc.</p>
+															<p class="card-text">This robot was created, generally, to market and boost interest for robotics in the country (PH). Standing 17" in height, with 20-DOF (Degrees of Freedom), humanoid in form, the team has aimed to make such system, flexible enough to perform several anthropomorphic functions. More specifically, turning, balancing with one leg, walking up (and down, ambitiously) the stairs, crouch, punch, kick, dance, and identify obstacles. But, of course, such has certain limitations as the scope is dependent on the time the team had during college.</p>
+															<p class="card-text">Although this may all sound promising but, the team really had a hard time (difficult times) due to the complexity and unpreparedness for such endeavor, and was only able to deliver minimally. It also took 4 re-designs due to unforeseen issues. Not proud of this, but sometime in the future, I will initiate a remake of this project. Now, that's exciting news! For now, let me present to you some details and pictures of the project.</p>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Details/Specifications</a></h5>
+															<figure class="figure d-none d-lg-inline-block text-center mb-0">
+																<img src="res/images/mech/humanoid/conceptflow.png" class="figure-img img-fluid w-75 mx-auto">
+																<figcaption class="figure-caption text-center h6">Basic System Flow</figcaption>
+															</figure>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Proximity Sensor</h5>
+																			<ul class="" type="square">
+																				<li>Limited to 1 sensor only (just to detect frontal obstacle)</li>
+																				<li>Stops at any command/motion when obstacle is detected</li>
+																				<li>IR Proximity Sensor Kit</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Gyroscope</h5>
+																			<ul class="" type="square">
+																				<li>Orientation Feedback</li>
+																				<li>Not implemented</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motor Controllers</h5>
+																			<ul class="" type="square">
+																				<li>2 units: 1 - upper limbs/torso; 1 - lower limbs</li>
+																				<li>e-Gizmo 8/16 Channel Servo Controller - a universal servo controller that can control individual movements of up to 16 servo motors in a single board</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Body / Frame</h5>
+																			<ul class="" type="square">
+																				<li>Polycarbonate (PC1000)</li>
+																				<li>Lightweight</li>
+																				<li>Good machinability (Fabrication)</li>
+																				<li>Durable (doesn't easily break)</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motor / Actuators (Upper-limbs/Torso)</h5>
+																			<ul class="" type="square">
+																				<li>Tower Pro MG995 Servo Motor</li>
+																				<li>Input Voltage: 3.5 to 8.4V</li>
+																				<li>Speed (4.8V): 0.17 sec/60°</li>
+																				<li>Speed (6.0V): 0.13 sec/60°</li>
+																				<li>Torque (4.8V): 180 oz-in (13kg-cm)</li>
+																				<li>Torque (6.0V): 208 oz-in (15kg-cm)</li>
+																				<li>Dimensions: 1.57" x 0.79" x 1.44" (40mm x 20mm x 36.5mm)</li>
+																				<li>Weight: 1.78oz (48g)</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motor / Actuators (Lower-limbs)</h5>
+																			<ul class="" type="square">
+																				<li>Futaba S9351 Servo Motor</li>
+																				<li>High-torque, Coreless Motor, Metal Gears, High-current Capable Wiring</li>
+																				<li>Speed (4.8V): 0.16 sec/60°</li>
+																				<li>Speed (6.0V): 0.13 sec/60°</li>
+																				<li>Torque (4.8V): 153 oz-in</li>
+																				<li>Torque (6.0V): 192 oz-in</li>
+																				<li>Dimensions: 1.6" x 0.8" x 1.4" (40mm x 20mm x 37mm)</li>
+																				<li>Weight: 2.2oz (61g)</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Power Supply</h5>
+																			<ul class="" type="square">
+																				<li>Industrial Power Supply (e-Gizmo)</li>
+																				<li>Input Voltage: 100-125VAC</li>
+																				<li>Output Voltage: 5VDC 20A</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Microcontroller</h5>
+																			<ul class="" type="square">
+																				<li>IRC Slimboard - Zilog (e-Gizmo)</li>
+																				<li>Z8F6421 Flash Microcontroller - a Flash-capable microcontroller based on Zilog's advanced eZ8-8bit microprocessor core</li>
+																				<li>Input: 7VDC</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motion Planning / Simulation</h5>
+																			<ul class="" type="square">
+																				<li>MATLAB - Robotics Toolbox (by Peter Corke)</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Images</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/1.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/2.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/3.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/4.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/5.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/6.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/6b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/6b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/7.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/8.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/9.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/10.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/11.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/12.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/13.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/14.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/15.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/16.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/17.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/18.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/19.jpg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Summary/Take-away(s)</a></h5>
+															<ul type="square">
+																<li>Top-heavy (not ideal for humanoid robots)</li>
+																<li>Power concerns (under-performing power sources)</li>
+																<li>Motor positioning cannot accomodate perfect motions (causing improper distribution of weight)</li>
+																<li>Revisit mathematical models and re-create algorithms</li>
+																<li>Expected movements were performed but barely satisfactory</li>
+																<li>For re-make in the near future. Will use Arduino or a more powerful microcontroller kit that will be available in the future. ;)</li>
+															</ul>
+														</div>
+														<div class="row justify-content-center pt-2">
+															<div class="col-12">
+																<div class="row justify-content-center">
+																	<div><span class="h4 text-secondary font-montH">Team GoLarge</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Jon, Marrion, Min, Earl</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Sir Marlon</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-center">
+																<a href="#hr-proper" class="btn btn-dark btn-sm text-right prev-btn-back" id="hr-btn-back" data-toggle="collapse">Back</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 py-3 collapse" id="lr-proper">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-header">
+														<div class="row">
+															<div class="col">
+																<div class="h4">Line-tracing Robot <span class="text-secondary small font-montH">2009</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Description</a></h5>
+															<p class="card-text">Part of the cool things that we do, back in college, is this - a line-tracing robot. This project is basically an application of our lessons in microcontrollers. For this example, we used an 8051 dev-board - fabricated using a template (printed, etched, soldered), coded, compiled, built, loaded instructions to the microcontroller, and go!</p>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Details/Specifications</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Body / Frame</h5>
+																			<ul class="" type="square">
+																				<li>Recycled Illustration Board</li>
+																				<li>Ferrero Rocher Container</li>
+																				<li>Other recycled materials</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motors / Actuators / Drivers</h5>
+																			<ul class="" type="square">
+																				<li>(2) Hyper Dash 2</li>
+																				<li>Gear-train (supporting common DC motors from toys) - to increase torque and support (or act as alternative for) the H-bridge's low current output and carry the load (weight).</li>
+																				<li>H-bridge - motor driver</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Sensors / Environment</h5>
+																			<ul class="" type="square">
+																				<li>(3) Phototransistors</li>
+																				<li>Each Phototransistor is partnered with a super-bright LED</li>
+																				<li>Test environment is controlled; an illustration board wrapped with tapes, reflective enough to signal the phototransistor; path is built using electical tapes (non-reflective)</li>
+																				<li>Two of the sensors are used to determine direction (left / right)</li>
+																				<li>Third sensor is to determine whether the robot is still on the path</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Microcontroller</h5>
+																			<ul class="" type="square">
+																				<li>8051 Dev-Board (Template)</li>
+																				<li>Used Kiel uVision (C/C++) to code instructions</li>
+																				<li>Used 8051 Loader to burn instructions to the microcontroller</li>
+																				<li>High-level Instruction: If reflecting light, proceed. If non-reflective is detected (by left or right sensor), turn accordingly. Third sensor is to detect if the robot is still on the path. No instructions provided for conflicting/branched path.</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Images</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/1.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/2.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/3.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/4.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/5.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/6.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/7.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/8.jpg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row justify-content-center pt-2">
+															<div class="col-12">
+																<div class="row justify-content-center">
+																	<div><span class="h4 text-secondary font-montH">Team GoLarge</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Jon and Earl</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-center">
+																<a href="#lr-proper" class="btn btn-dark btn-sm text-right prev-btn-back" id="lr-btn-back" data-toggle="collapse">Back</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="microcontrollers-tab">
+									<div class="container">
+										<div class="row justify-content-center">
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-img-top">
+														<img class="img-fluid rounded-top" src="res/images/mech/sevenseg/sevenseg_card_disp.jpg">
+													</div>
+													<div class="card-body">
+														<h5 class="card-title"><a href="#sevenseg-proper" data-toggle="collapse" class="prev-btn a hover-text-dviolet font-montH">4 x 5 - LED Display</a></h5>
+														<p class="card-text">Yet another microcontroller application. This time, I created a 4 x 5 LED display to apply/show a 7-segment display. The 4 x 5 display is an add-on, sort of an actuator for the microco ...</p>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-right">
+																<a href="#sevenseg-proper" class="btn btn-dark btn-sm text-right prev-btn" id="sevenseg-btn" data-toggle="collapse">View</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark hideout-bg" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+														<span class="h5 font-montH">Microcontrollers</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark hideout-bg" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+														<span class="h5 font-montH">Microcontrollers</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 py-3 collapse" id="sevenseg-proper">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-header">
+														<div class="row">
+															<div class="col">
+																<div class="h4">4 x 5 - LED Display <span class="text-secondary small font-montH">2009</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Description</a></h5>
+															<p class="card-text">Yet another microcontroller application. This time, I created a 4 x 5 LED display to apply/show a 7-segment display. The 4 x 5 display is an add-on, sort of an actuator for the microcontroller.</p>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Details/Specifications</a></h5>															
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Microcontroller</h5>
+																			<ul class="" type="square">
+																				<li>8051 Dev-Board (Template)</li>
+																				<li>Used Kiel uVision (C/C++) to code instructions</li>
+																				<li>Used 8051 Loader to burn instructions to the microcontroller</li>
+																				<li>High-level Instruction: Display 0-9 as inputted in HyperTerminal</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">4 x 5 Display</h5>
+																			<ul class="" type="square">
+																				<li>20 LEDs - Orange (Regular)</li>
+																				<li>8-bit Input</li>
+																				<li>Board fabricated by Team Go Large</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Images</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/board.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/n.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/0.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/1b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/1.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/2.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/3.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/4.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/5.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/6.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/7.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/8.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/9.jpg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row justify-content-center pt-2">
+															<div class="col-12">
+																<div class="row justify-content-center">
+																	<div><span class="h4 text-secondary font-montH">Team GoLarge</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Jon, Earl</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-center">
+																<a href="#sevenseg-proper" class="btn btn-dark btn-sm text-right prev-btn-back" id="ss-btn-back" data-toggle="collapse">Back</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="cad-tab">
+									<div class="container">
+										<div class="row justify-content-center">
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-img-top">
+														<img class="img-fluid rounded-top" src="res/images/mech/cad/catia_card_disp.jpg">
+													</div>
+													<div class="card-body">
+														<h5 class="card-title"><a href="#lbymemu-proper" data-toggle="collapse" class="prev-btn a hover-text-dviolet font-montH">Free Draw and Assembly</a></h5>
+														<p class="card-text">Back in college, we were given the liberty to choose, objects that we'd like to draft and assemble using DS CATIA. For that laboratory subject, I chose two products - both are LEGO&#0174;.</p>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-right">
+																<a href="#lbymemu-proper" class="btn btn-dark btn-sm text-right prev-btn" id="lbymemu-btn" data-toggle="collapse">View</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark hideout-bg" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+														<span class="h5 font-montH">CAD<span class="font-arial font-italic pl-1 pr-2">I</span>CATIA</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark hideout-bg" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+														<span class="h5 font-montH">CAD<span class="font-arial font-italic pl-1 pr-2">I</span>CATIA</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 py-3 collapse" id="lbymemu-proper">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-header">
+														<div class="row">
+															<div class="col">
+																<div class="h4">CATIA: Free Draw and Assembly <span class="text-secondary small font-montH">2010</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Description</a></h5>
+															<p class="card-text">Back in college, we were given the liberty to choose, objects that we'd like to draft and assemble using DS CATIA. For that laboratory subject, I chose two products - both are LEGO&#0174;.</p>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Images</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/1.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/2.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/3.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/4.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/5.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/6.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/7.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/1b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/2b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/3b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/4b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/5b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/6b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/7b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/8b.jpg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row justify-content-center pt-2">
+															<div class="col-12">
+																<div class="row justify-content-center">
+																	<div><span class="h4 text-secondary font-montH">Team GoLarge</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Earl</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-center">
+																<a href="#lbymemu-proper" class="btn btn-dark btn-sm text-right prev-btn-back" id="lu-btn-back" data-toggle="collapse">Back</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer justify-content-center">
+						<div class="row w-100">
+							<div class="col text-left font-montH" style="color: darkviolet;">
+								<span>Earl-<span class="d-none d-md-inline">gineering</span><span class="d-md-none">ng'g</span> <span class="font-montH">&copy; 2018</span></span>
+							</div>
+							<div class="d-none d-lg-block col text-right">
+								<a href="#" class="sining-up-btn arts-footer-btns hover-text-orange" title="Go to Top"><span class="d-inline d-md-none">Top</span><i class="fas fa-arrow-alt-circle-up fa-lg fa-fw"></i></a>
+							    <a href="#arts" class="arts-footer-btns hover-text-tomato" data-dismiss="modal" title="Close"><span class="d-inline d-md-none">Close</span><i class="fas fa-times-circle fa-lg fa-fw"></i></a>
+							</div>
+							<div class="d-block d-lg-none col text-right">
+						    	<span class="d-flex justify-content-end align-top"><a href="#" class="sining-up-btn arts-footer-btns hover-text-orange pl-1 text-uppercase small" title="Go to Top">top</a><span class="font-arial font-weight-light small px-1 text-secondary">I</span><a href="#arts" class="arts-footer-btns hover-text-tomato text-uppercase small" data-dismiss="modal" title="Close">close</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                                </div>
+		<!-- WEB DEV -->
+		<div class="modal fade" id="dev-modal">
+			<div class="modal-dialog m-0" style="height: 100vh;">
+				<div class="modal-content rounded-0 border-0 h-100 cloud-bg" style="width: 100vw; background-color: #fff;">
+					<div id="dev-modal-body" class="modal-body" style="overflow: auto;">
+						<div class="row px-3 justify-content-center">
+							<span class="modal-title font-deliciousAdventures display-4 text-center" style="text-shadow: 1px 1px 0 #2196F3" id="dev-title">eeearlyshell</span>
+						</div>
+						<div class="row px-3 justify-content-center pt-sm-3">
+					    	<div class="pb-1 col-10 col-sm-8 col-md-6 col-lg-4 border-top border-bottom text-center">
+								<span class="text-center font-italic">making arts from codes and engineering</span>
+							</div>
+						</div>
+						<div class="container pt-3 mb-2">
+							<div class="row justify-content-center pb-2">
+								<div class="prev-item" style="background: linear-gradient(45deg, white 50%, teal);">
+									<div class="position-absolute info preview-long">
+										<div class="position-absolute text-right w-100 p-1 p-md-2 p-lg-3" style="top: 1rem; right: 0.5rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://earlyshell.github.io/TheSandbox/" target="_blank" class="a-white hover-text-skyblue"><span class="h5" style="text-shadow: 0px 0px 2px #000;">The Sandbox</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<div class="col-11 col-sm-6 px-0">
+													<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Sandbox is a website for a [non-existent] learning center, The Sandbox, offering IT-related and fun workshops for kids and teens. <span class="d-none d-md-inline">The Sandbox is every children’s playground to start learning web development (in a fun and enjoyable way) as early as 6 years of age. As the saying goes, “Start ‘em young…”.</span></span>
+												</div>
+											</div>
+											<div class="row justify-content-end px-4 pt-2">
+												<span class="badge badge-primary">Tuitt Coding Bootcamp</span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview-long p-1 p-md-2 p-lg-3" src="res/images/webpages/sandbox.png">
+								</div>
+							</div>
+							<div class="row justify-content-center pb-2">
+								<div class="prev-item" style="background: linear-gradient(45deg, #007bff, white, gold);">
+									<div class="position-absolute info preview-long">
+										<div class="position-absolute text-right w-100 p-1 p-md-2 p-lg-3" style="top: 1rem; right: 0.5rem;">
+											<div class="row justify-content-end px-4">
+												<a href="http://cramless.elementfx.com/" target="_blank" class="a-white hover-text-skyblue"><span class="h5" style="text-shadow: 0px 0px 2px #000;">Cramless</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<div class="col-11 col-sm-6 px-0">
+													<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Cramless is your last minute print-shop. <span class="d-none d-md-inline">No more cramming: Maximize your time finishing your printables, and we do the last minute printing for you with our UPD (Upload-Print-Deliver) System. Sign-up now!</span></span>
+												</div>
+											</div>
+											<div class="row justify-content-end px-4 pt-2">
+												<span class="badge badge-primary">Tuitt Coding Bootcamp</span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview-long p-1 p-md-2 p-lg-3" src="res/images/webpages/cramless.png">
+								</div>
+							</div>
+							<div class="row justify-content-center pb-2">
+								<div class="prev-item" style="background: linear-gradient(45deg, skyblue, white);">
+									<div class="position-absolute info preview-long">
+										<div class="position-absolute text-right w-100 p-1 p-md-2 p-lg-3" style="top: 1rem; right: 0.5rem;">
+											<div class="row justify-content-end px-4">
+												<a href="http://findeee.000webhostapp.com/" target="_blank" class="a-white hover-text-skyblue"><span class="h5" style="text-shadow: 0px 0px 2px #000;">Findee</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<div class="col-11 col-sm-6 px-0">
+													<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Findee is a game based on the hit puzzles book, Where's Wally (Waldo). You deserve a break. Play now!</span>
+												</div>
+											</div>
+											<div class="row justify-content-end px-4 pt-2">
+												<span class="badge badge-primary">Tuitt Coding Bootcamp</span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview-long p-1 p-md-2 p-lg-3" src="res/images/webpages/findeee.png">
+								</div>
+							</div>
+							<div class="row justify-content-center py-3">
+								<div>
+									<span class="h3 font-deliciousAdventures" style="text-shadow: 0px 0px 2px skyblue">more to come...</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer justify-content-center border-0">
+						<div class="row w-100">
+							<div class="col text-left font-deliciousAdventures">
+								<span>eeearlyshell <sub class="font-arial">&copy; 2018</sub></span>
+							</div>
+							<div class="d-none d-lg-block col text-right">
+						    	<a href="https://github.com/earlyshell" target="_blank" class="arts-footer-btns hover-text-skyblue" title="GitHub - earlyshell"><i class="fab fa-github fa-lg fa-fw"></i></a>
+								<a href="#" class="sining-up-btn arts-footer-btns hover-text-orange" title="Go to Top"><span class="d-inline d-md-none">Top</span><i class="fas fa-arrow-alt-circle-up fa-lg fa-fw"></i></a>
+							    <a href="#arts" class="arts-footer-btns hover-text-tomato" data-dismiss="modal" title="Close"><span class="d-inline d-md-none">Close</span><i class="fas fa-times-circle fa-lg fa-fw"></i></a>
+							</div>
+							<div class="d-block d-lg-none col text-right">
+						    	<a href="https://github.com/earlyshell" target="_blank" class="d-none d-sm-inline arts-footer-btns hover-text-skyblue text-uppercase small" title="GitHub - earlyshell">earlyshell</a> <span class="d-none d-sm-inline font-arial font-weight-light small px-1">I</span>
+								<a href="#" class="sining-up-btn arts-footer-btns hover-text-orange text-uppercase small" title="Go to Top">top</a> <span class="font-arial font-weight-light small px-1">I</span>
+							    <a href="#arts" class="arts-footer-btns hover-text-tomato text-uppercase small" data-dismiss="modal" title="Close">close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                                    
-                                    
-                                    
-                                                   
-                                </div>
-                            </div>
-                            <div class="col collapse my-2" id="eh-almamater">
-                                <div class="row mx-auto text-center justify-content-center">
-                                    
-                                    <div class="col-auto col-sm-12 align-self-center px-1">
-                                        <a href="https://tuitt.com/" target="_blank"><img src="public/icons_leet/tuitt_logo.png" alt="Tuitt " class="rounded-0 mx-1 my-sm-2" style="width: 3rem; height: auto;"></a>
-                                    </div>
-                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
-                                        <div class="row h5 font-weight-bold my-0 text-center align-self-center justify-content-center">Tuitt Coding Bootcamp</div>
-                                        <div class="row text-center align-self-center justify-content-center">Full-stack Web Development</div> 
-                                    </div>
-
-                                    <div class="w-100 d-none d-sm-block"></div>
-
-                                    <div class="col-auto col-sm-12 align-self-center px-1">
-                                        <a href="https://www.dlsu.edu.ph/" target="_blank"><img src="public/icons_leet/dlsu_logo.png" alt="DLSU-M" class="rounded-0 mx-1 my-sm-2" style="width: 3.5rem; height: auto;"></a>
-                                    </div>
-                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
-                                        <div class="row h5 font-weight-bold my-0 text-center align-self-center justify-content-center">De La Salle University - Manila</div>
-                                        <div class="row text-center align-self-center justify-content-center">BS Manufacturing Engineering and Management</div>
-                                    </div>
-
-                                    <div class="w-100 d-none d-sm-block"></div>
-
-                                    <div class="col-auto col-sm-12 align-self-center px-1">
-                                        <a href="http://maristschool.edu.ph/" target="_blank"><img src="public/icons_leet/marist_logo.png" alt="Marist School" class="rounded-0 mx-1 my-sm-2" style="width: auto; height: 4rem;"></a>
-                                    </div>
-                                    <div class="col col-sm-auto mb-sm-2 align-self-center d-none d-sm-block">
-                                        <div class="row h5 font-weight-bold my-0 text-center align-self-center justify-content-center">Marist School</div>
-                                        <div class="row text-center align-self-center justify-content-center">High School</div>
-                                    </div>
-
-                                    <div class="w-100 d-none d-sm-block"></div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 mx-auto text-center">
-                                <span>
-                                    <a href="https://drive.google.com/file/d/1r4rhCPt46qURUNEBTq73QD6j8joiyKXu/view?usp=sharing" class="btn btn-success mx-auto mt-1" style="border-radius: 5rem; color: white;" target="_blank"><span class="mx-5"><i class="fas fa-download fa-fw"></i><!-- <i class="fas fa-download fa-fw"></i> -->&nbsp;Resume</span></a>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-12 text-center mx-auto">
-                                <a href="mailto:hapal.earl.p@gmail.com" class="text-success desc-lg">hapal.earl.p@gmail.com</a>
-                                <div style="line-height: 0.5;" class="desc-lg"><span>+63 939 522 2413</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <script src="public/js/watch.js"></script>
-        <script src="public/js/createdwebpages.js"></script>
-        <script src="public/js/maininfo.js"></script>
-    </body>
+		<script src="res/js/earlrph.js"></script>
+	</body>
 </html>
