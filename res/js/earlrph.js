@@ -100,36 +100,6 @@ $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
 });
 
 $(window).on('orientationchange resize',function(){
-	//console.log(getCardHeight());
 	$('.select-item').removeAttr('style');
 	$('.modal').hasClass('show') ? setTimeout(function(){setCardHeight('[class="tab-pane fade active show"] .select-item')},300) :'';
 });
-
-// var getModalHeight = function(elem){
-// 	// console.log($(mbody_id +' > div:nth-child(3)').height());
-// 	return $(elem +' > div:nth-child(3)').height();
-// }
-
-// var getModalScrHeight = function(elem){
-// 	return $(elem).height();
-// }
-
-// var getScrollAmt = function(elem){
-// 	// console.log($(mbody_id).scrollTop());
-// 	return $(elem).scrollTop();
-// }
-
-// var getMFooterHeight = function(elem){
-// 	return $(elem).height();
-// }
-
-// $('#arts-modal-body').scroll(function(){
-// 	// getModalHeight('#arts-modal-body');
-// 	// getScrollAmt('#arts-modal-body');
-// 	console.log('Scroll Amount: ' + $('#arts-modal-body').scrollTop());
-// 	console.log('Modal Screen Height: ' + $('#arts-modal-body').parent().outerHeight());
-// 	console.log('Modal Height: ' + $('#arts-modal-body').prop('scrollHeight'));
-// 	console.log('Footer Height: ' + $('#arts-modal-body + .modal-footer').outerHeight());
-// 	console.log('Scroll %: ' + $('#arts-modal-body').scrollTop()/(($('#arts-modal-body').prop('scrollHeight')-$('#arts-modal-body').parent().outerHeight())+$('#arts-modal-body + .modal-footer').outerHeight()));
-// });
-
