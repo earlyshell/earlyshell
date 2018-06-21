@@ -101,7 +101,7 @@
 								<p class="card-text">My coding experience is not limited to web development only. I enjoyed working on microcontrollers as well. Applied such to line-tracing robot, traffic light, to name a few.</p>
 							</div>
 							<div class="card-footer text-right">
-								<a href="#" class="btn btn-dark btn-sm invert-color">Let's go!</a>
+								<a href="#dev-modal" data-toggle="modal" class="btn btn-dark btn-sm invert-color">Let's go!</a>
 								<a href="https://github.com/earlyshell" target="_blank" class="btn btn-dark btn-sm invert-color" title="GitHub - earlyshell"><i class="fab fa-github-alt"></i></a>
 							</div>
 						</div>
@@ -539,7 +539,7 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<ul class="nav nav-pills">
+							<ul class="nav nav-pills" id="mech-pills">
 								<li class=""><a href="#robot-tab" data-toggle="pill" class="mech-pill color-dgray active arts-footer-btns hover-text-dviolet px-1 text-uppercase">Robots</a></li>
 								<span class="font-arial font-weight-light">I</span>
 								<li class=""><a href="#microcontrollers-tab" data-toggle="pill" class="mech-pill color-dgray sining-up-btn arts-footer-btns hover-text-dviolet px-1 text-uppercase">Microcontrollers</a></li>
@@ -550,52 +550,52 @@
 
 						<div class="container pt-3 mb-5">
 							<div class="tab-content">
-								<div class="tab-pane fade show active" id="robot-tab">
+								<div class="tab-pane fade active show" id="robot-tab">
 									<div class="container">
 										<div class="row justify-content-center">
-											<div class="col-12 col-md-6 col-lg-4 py-3">
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
 												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
 													<div class="card-img-top">
 														<img class="img-fluid rounded-top" src="res/images/mech/humanoid/humanoid_card_disp.jpg">
 													</div>
 													<div class="card-body">
-														<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Humanoid Robot</a></h5>
+														<h5 class="card-title"><a href="#hr-proper" data-toggle="collapse" class="prev-btn a hover-text-dviolet font-montH">Humanoid Robot</a></h5>
 														<p class="card-text">Robots, eh? This product was made for educational purposes - a thesis, back in college, which demonstrates application of concepts relating to robotics such as kinematics, certain mathe ...</p>
 													</div>
 													<div class="card-footer">
 														<div class="row justify-content-end">
 															<div class="col text-right">
-																<a href="#" class="btn btn-dark btn-sm text-right prev-btn" id="hr-btn">View</a>
+																<a href="#hr-proper" class="btn btn-dark btn-sm text-right prev-btn" id="hr-btn" data-toggle="collapse">View</a>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-12 col-md-6 col-lg-4 py-3">
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
 												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
 													<div class="card-img-top">
 														<img class="img-fluid rounded-top" src="res/images/mech/mobot/mobot_card_disp.jpg">
 													</div>
 													<div class="card-body">
-														<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Line-tracing Robot</a></h5>
+														<h5 class="card-title"><a href="#lr-proper" data-toggle="collapse" class="prev-btn a hover-text-dviolet font-montH">Line-tracing Robot</a></h5>
 														<p class="card-text">Part of the cool things that we do, back in college, is this - a line-tracing robot. This project is basically an application of our lessons in microcontrollers. For this example, we us ...</p>
 													</div>
 													<div class="card-footer">
 														<div class="row justify-content-end">
 															<div class="col text-right">
-																<a href="#" class="btn btn-dark btn-sm text-right prev-btn" id="mobot-btn">View</a>
+																<a href="#lr-proper" class="btn btn-dark btn-sm text-right prev-btn" id="mobot-btn" data-toggle="collapse">View</a>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-12 col-md-6 col-lg-4 py-3">
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
 												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
 													<div class="card-img-top">
 														<img class="img-fluid rounded-top" src="res/images/mech/humanoid/humanoid_card_disp_v2.jpg">
 													</div>
 													<div class="card-body">
-														<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Humanoid Robot v2</a></h5>
+														<h5 class="card-title"><a href="#" class="a hover-text-dviolet font-montH">Humanoid Robot v2</a></h5>
 														<p class="card-text">If you're excited in this project, so do I. Unfortunately, I'm gonna need a job first so this hobby can be funded. ;)</p>
 													</div>
 													<div class="card-footer">
@@ -607,14 +607,865 @@
 													</div>
 												</div>
 											</div>
+											<div class="col-12 py-3 collapse" id="hr-proper">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-header">
+														<div class="row">
+															<div class="col">
+																<div class="h4">Humanoid Robot <span class="text-secondary small font-montH">2011</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Description</a></h5>
+															<p class="card-text">Robots, eh? This product was made for educational purposes - a thesis, back in college, which demonstrates application of concepts relating to robotics such as kinematics, certain mathematical models, COG (weight management), etc.</p>
+															<p class="card-text">This robot was created, generally, to market and boost interest for robotics in the country (PH). Standing 17" in height, with 20-DOF (Degrees of Freedom), humanoid in form, the team has aimed to make such system, flexible enough to perform several anthropomorphic functions. More specifically, turning, balancing with one leg, walking up (and down, ambitiously) the stairs, crouch, punch, kick, dance, and identify obstacles. But, of course, such has certain limitations as the scope is dependent on the time the team had during college.</p>
+															<p class="card-text">Although this may all sound promising but, the team really had a hard time (difficult times) due to the complexity and unpreparedness for such endeavor, and was only able to deliver minimally. It also took 4 re-designs due to unforeseen issues. Not proud of this, but sometime in the future, I will initiate a remake of this project. Now, that's exciting news! For now, let me present to you some details and pictures of the project.</p>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Details/Specifications</a></h5>
+															<figure class="figure d-none d-lg-inline-block text-center mb-0">
+																<img src="res/images/mech/humanoid/conceptflow.png" class="figure-img img-fluid w-75 mx-auto">
+																<figcaption class="figure-caption text-center h6">Basic System Flow</figcaption>
+															</figure>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Proximity Sensor</h5>
+																			<ul class="" type="square">
+																				<li>Limited to 1 sensor only (just to detect frontal obstacle)</li>
+																				<li>Stops at any command/motion when obstacle is detected</li>
+																				<li>IR Proximity Sensor Kit</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Gyroscope</h5>
+																			<ul class="" type="square">
+																				<li>Orientation Feedback</li>
+																				<li>Not implemented</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motor Controllers</h5>
+																			<ul class="" type="square">
+																				<li>2 units: 1 - upper limbs/torso; 1 - lower limbs</li>
+																				<li>e-Gizmo 8/16 Channel Servo Controller - a universal servo controller that can control individual movements of up to 16 servo motors in a single board</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Body / Frame</h5>
+																			<ul class="" type="square">
+																				<li>Polycarbonate (PC1000)</li>
+																				<li>Lightweight</li>
+																				<li>Good machinability (Fabrication)</li>
+																				<li>Durable (doesn't easily break)</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motor / Actuators (Upper-limbs/Torso)</h5>
+																			<ul class="" type="square">
+																				<li>Tower Pro MG995 Servo Motor</li>
+																				<li>Input Voltage: 3.5 to 8.4V</li>
+																				<li>Speed (4.8V): 0.17 sec/60°</li>
+																				<li>Speed (6.0V): 0.13 sec/60°</li>
+																				<li>Torque (4.8V): 180 oz-in (13kg-cm)</li>
+																				<li>Torque (6.0V): 208 oz-in (15kg-cm)</li>
+																				<li>Dimensions: 1.57" x 0.79" x 1.44" (40mm x 20mm x 36.5mm)</li>
+																				<li>Weight: 1.78oz (48g)</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motor / Actuators (Lower-limbs)</h5>
+																			<ul class="" type="square">
+																				<li>Futaba S9351 Servo Motor</li>
+																				<li>High-torque, Coreless Motor, Metal Gears, High-current Capable Wiring</li>
+																				<li>Speed (4.8V): 0.16 sec/60°</li>
+																				<li>Speed (6.0V): 0.13 sec/60°</li>
+																				<li>Torque (4.8V): 153 oz-in</li>
+																				<li>Torque (6.0V): 192 oz-in</li>
+																				<li>Dimensions: 1.6" x 0.8" x 1.4" (40mm x 20mm x 37mm)</li>
+																				<li>Weight: 2.2oz (61g)</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Power Supply</h5>
+																			<ul class="" type="square">
+																				<li>Industrial Power Supply (e-Gizmo)</li>
+																				<li>Input Voltage: 100-125VAC</li>
+																				<li>Output Voltage: 5VDC 20A</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Microcontroller</h5>
+																			<ul class="" type="square">
+																				<li>IRC Slimboard - Zilog (e-Gizmo)</li>
+																				<li>Z8F6421 Flash Microcontroller - a Flash-capable microcontroller based on Zilog's advanced eZ8-8bit microprocessor core</li>
+																				<li>Input: 7VDC</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motion Planning / Simulation</h5>
+																			<ul class="" type="square">
+																				<li>MATLAB - Robotics Toolbox (by Peter Corke)</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Images</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/1.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/2.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/3.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/4.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/5.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/6.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/6b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/6b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/7.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/8.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/9.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/10.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/11.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/12.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/13.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/14.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/15.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/16.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/17.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/18.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/humanoid/19.jpg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Summary/Take-away(s)</a></h5>
+															<ul type="square">
+																<li>Top-heavy (not ideal for humanoid robots)</li>
+																<li>Power concerns (under-performing power sources)</li>
+																<li>Motor positioning cannot accomodate perfect motions (causing improper distribution of weight)</li>
+																<li>Revisit mathematical models and re-create algorithms</li>
+																<li>Expected movements were performed but barely satisfactory</li>
+																<li>For re-make in the near future. Will use Arduino or a more powerful microcontroller kit that will be available in the future. ;)</li>
+															</ul>
+														</div>
+														<div class="row justify-content-center pt-2">
+															<div class="col-12">
+																<div class="row justify-content-center">
+																	<div><span class="h4 text-secondary font-montH">Team GoLarge</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Jon, Marrion, Min, Earl</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Sir Marlon</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-center">
+																<a href="#hr-proper" class="btn btn-dark btn-sm text-right prev-btn-back" id="hr-btn-back" data-toggle="collapse">Back</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 py-3 collapse" id="lr-proper">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-header">
+														<div class="row">
+															<div class="col">
+																<div class="h4">Line-tracing Robot <span class="text-secondary small font-montH">2009</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Description</a></h5>
+															<p class="card-text">Part of the cool things that we do, back in college, is this - a line-tracing robot. This project is basically an application of our lessons in microcontrollers. For this example, we used an 8051 dev-board - fabricated using a template (printed, etched, soldered), coded, compiled, built, loaded instructions to the microcontroller, and go!</p>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Details/Specifications</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Body / Frame</h5>
+																			<ul class="" type="square">
+																				<li>Recycled Illustration Board</li>
+																				<li>Ferrero Rocher Container</li>
+																				<li>Other recycled materials</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Motors / Actuators / Drivers</h5>
+																			<ul class="" type="square">
+																				<li>(2) Hyper Dash 2</li>
+																				<li>Gear-train (supporting common DC motors from toys) - to increase torque and support (or act as alternative for) the H-bridge's low current output and carry the load (weight).</li>
+																				<li>H-bridge - motor driver</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Sensors / Environment</h5>
+																			<ul class="" type="square">
+																				<li>(3) Phototransistors</li>
+																				<li>Each Phototransistor is partnered with a super-bright LED</li>
+																				<li>Test environment is controlled; an illustration board wrapped with tapes, reflective enough to signal the phototransistor; path is built using electical tapes (non-reflective)</li>
+																				<li>Two of the sensors are used to determine direction (left / right)</li>
+																				<li>Third sensor is to determine whether the robot is still on the path</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Microcontroller</h5>
+																			<ul class="" type="square">
+																				<li>8051 Dev-Board (Template)</li>
+																				<li>Used Kiel uVision (C/C++) to code instructions</li>
+																				<li>Used 8051 Loader to burn instructions to the microcontroller</li>
+																				<li>High-level Instruction: If reflecting light, proceed. If non-reflective is detected (by left or right sensor), turn accordingly. Third sensor is to detect if the robot is still on the path. No instructions provided for conflicting/branched path.</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Images</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/1.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/2.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/3.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/4.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/5.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/6.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/7.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/mobot/8.jpg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row justify-content-center pt-2">
+															<div class="col-12">
+																<div class="row justify-content-center">
+																	<div><span class="h4 text-secondary font-montH">Team GoLarge</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Jon and Earl</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-center">
+																<a href="#lr-proper" class="btn btn-dark btn-sm text-right prev-btn-back" id="lr-btn-back" data-toggle="collapse">Back</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="tab-pane fade" id="microcontrollers-tab">
-									<span class="text-light">B</span>
+									<div class="container">
+										<div class="row justify-content-center">
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-img-top">
+														<img class="img-fluid rounded-top" src="res/images/mech/sevenseg/sevenseg_card_disp.jpg">
+													</div>
+													<div class="card-body">
+														<h5 class="card-title"><a href="#sevenseg-proper" data-toggle="collapse" class="prev-btn a hover-text-dviolet font-montH">4 x 5 - LED Display</a></h5>
+														<p class="card-text">Yet another microcontroller application. This time, I created a 4 x 5 LED display to apply/show a 7-segment display. The 4 x 5 display is an add-on, sort of an actuator for the microco ...</p>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-right">
+																<a href="#sevenseg-proper" class="btn btn-dark btn-sm text-right prev-btn" id="sevenseg-btn" data-toggle="collapse">View</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark hideout-bg" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+														<span class="h5 font-montH">Microcontrollers</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark hideout-bg" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+														<span class="h5 font-montH">Microcontrollers</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 py-3 collapse" id="sevenseg-proper">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-header">
+														<div class="row">
+															<div class="col">
+																<div class="h4">4 x 5 - LED Display <span class="text-secondary small font-montH">2009</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Description</a></h5>
+															<p class="card-text">Yet another microcontroller application. This time, I created a 4 x 5 LED display to apply/show a 7-segment display. The 4 x 5 display is an add-on, sort of an actuator for the microcontroller.</p>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Details/Specifications</a></h5>															
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">Microcontroller</h5>
+																			<ul class="" type="square">
+																				<li>8051 Dev-Board (Template)</li>
+																				<li>Used Kiel uVision (C/C++) to code instructions</li>
+																				<li>Used 8051 Loader to burn instructions to the microcontroller</li>
+																				<li>High-level Instruction: Display 0-9 as inputted in HyperTerminal</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body">
+																			<h5 class="card-title">4 x 5 Display</h5>
+																			<ul class="" type="square">
+																				<li>20 LEDs - Orange (Regular)</li>
+																				<li>8-bit Input</li>
+																				<li>Board fabricated by Team Go Large</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Images</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/board.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/n.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/0.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/1b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/1.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/2.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/3.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/4.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/5.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/6.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/7.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/8.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/sevenseg/9.jpg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row justify-content-center pt-2">
+															<div class="col-12">
+																<div class="row justify-content-center">
+																	<div><span class="h4 text-secondary font-montH">Team GoLarge</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Jon, Earl</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-center">
+																<a href="#sevenseg-proper" class="btn btn-dark btn-sm text-right prev-btn-back" id="ss-btn-back" data-toggle="collapse">Back</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="tab-pane fade" id="cad-tab">
-									<span class="text-light">C</span>
+									<div class="container">
+										<div class="row justify-content-center">
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-img-top">
+														<img class="img-fluid rounded-top" src="res/images/mech/cad/catia_card_disp.jpg">
+													</div>
+													<div class="card-body">
+														<h5 class="card-title"><a href="#lbymemu-proper" data-toggle="collapse" class="prev-btn a hover-text-dviolet font-montH">Free Draw and Assembly</a></h5>
+														<p class="card-text">Back in college, we were given the liberty to choose, objects that we'd like to draft and assemble using DS CATIA. For that laboratory subject, I chose two products - both are LEGO&#0174;.</p>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-right">
+																<a href="#lbymemu-proper" class="btn btn-dark btn-sm text-right prev-btn" id="lbymemu-btn" data-toggle="collapse">View</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark hideout-bg" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+														<span class="h5 font-montH">CAD<span class="font-arial font-italic pl-1 pr-2">I</span>CATIA</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-lg-4 py-3 select-item">
+												<div class="card w-100 h-100 border-dark hideout-bg" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+														<span class="h5 font-montH">CAD<span class="font-arial font-italic pl-1 pr-2">I</span>CATIA</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 py-3 collapse" id="lbymemu-proper">
+												<div class="card w-100 h-100 border-dark" style="width: 18rem; background-color: #000; color: #fff; box-shadow: 1px 1px 0 0 darkviolet;">
+													<div class="card-header">
+														<div class="row">
+															<div class="col">
+																<div class="h4">CATIA: Free Draw and Assembly <span class="text-secondary small font-montH">2010</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Description</a></h5>
+															<p class="card-text">Back in college, we were given the liberty to choose, objects that we'd like to draft and assemble using DS CATIA. For that laboratory subject, I chose two products - both are LEGO&#0174;.</p>
+														</div>
+														<div class="py-2">
+															<h5 class="card-title"><a href="#" class="a hover-text-dviolet">Images</a></h5>
+															<div class="row">
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/1.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/2.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/3.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/4.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/5.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/6.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/7.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/1b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/2b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/3b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/4b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/5b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/6b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/7b.jpg">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-12 col-md-6 col-lg-4 my-1 my-md-3">
+																	<div class="card w-100 h-100 border-0" style="width: 18rem; background-color: #000; color: #fff;">
+																		<div class="card-body p-0">
+																			<img class="img-fluid gray-to-color rounded" src="res/images/mech/cad/8b.jpg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row justify-content-center pt-2">
+															<div class="col-12">
+																<div class="row justify-content-center">
+																	<div><span class="h4 text-secondary font-montH">Team GoLarge</span></div>
+																</div>
+																<div class="row justify-content-center">
+																	<div><span class="font-montH">Earl</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="row justify-content-end">
+															<div class="col text-center">
+																<a href="#lbymemu-proper" class="btn btn-dark btn-sm text-right prev-btn-back" id="lu-btn-back" data-toggle="collapse">Back</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -630,6 +1481,108 @@
 							</div>
 							<div class="d-block d-lg-none col text-right">
 						    	<span class="d-flex justify-content-end align-top"><a href="#" class="sining-up-btn arts-footer-btns hover-text-orange pl-1 text-uppercase small" title="Go to Top">top</a><span class="font-arial font-weight-light small px-1 text-secondary">I</span><a href="#arts" class="arts-footer-btns hover-text-tomato text-uppercase small" data-dismiss="modal" title="Close">close</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- WEB DEV -->
+		<div class="modal fade" id="dev-modal">
+			<div class="modal-dialog m-0" style="height: 100vh;">
+				<div class="modal-content rounded-0 border-0 h-100 cloud-bg" style="width: 100vw; background-color: #fff;">
+					<div id="dev-modal-body" class="modal-body" style="overflow: auto;">
+						<div class="row px-3 justify-content-center">
+							<span class="modal-title font-deliciousAdventures display-4 text-center" style="text-shadow: 1px 1px 0 #2196F3" id="dev-title">eeearlyshell</span>
+						</div>
+						<div class="row px-3 justify-content-center pt-sm-3">
+					    	<div class="pb-1 col-10 col-sm-8 col-md-6 col-lg-4 border-top border-bottom text-center">
+								<span class="text-center font-italic">making arts from codes and engineering</span>
+							</div>
+						</div>
+						<div class="container pt-3 mb-2">
+							<div class="row justify-content-center pb-2">
+								<div class="prev-item" style="background: linear-gradient(45deg, white 50%, teal);">
+									<div class="position-absolute info preview-long">
+										<div class="position-absolute text-right w-100 p-1 p-md-2 p-lg-3" style="top: 1rem; right: 0.5rem;">
+											<div class="row justify-content-end px-4">
+												<a href="https://earlyshell.github.io/TheSandbox/" target="_blank" class="a-white hover-text-skyblue"><span class="h5" style="text-shadow: 0px 0px 2px #000;">The Sandbox</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<div class="col-11 col-sm-6 px-0">
+													<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Sandbox is a website for a [non-existent] learning center, The Sandbox, offering IT-related and fun workshops for kids and teens. <span class="d-none d-md-inline">The Sandbox is every children’s playground to start learning web development (in a fun and enjoyable way) as early as 6 years of age. As the saying goes, “Start ‘em young…”.</span></span>
+												</div>
+											</div>
+											<div class="row justify-content-end px-4 pt-2">
+												<span class="badge badge-primary">Tuitt Coding Bootcamp</span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview-long p-1 p-md-2 p-lg-3" src="res/images/webpages/sandbox.png">
+								</div>
+							</div>
+							<div class="row justify-content-center pb-2">
+								<div class="prev-item" style="background: linear-gradient(45deg, #007bff, white, gold);">
+									<div class="position-absolute info preview-long">
+										<div class="position-absolute text-right w-100 p-1 p-md-2 p-lg-3" style="top: 1rem; right: 0.5rem;">
+											<div class="row justify-content-end px-4">
+												<a href="http://cramless.elementfx.com/" target="_blank" class="a-white hover-text-skyblue"><span class="h5" style="text-shadow: 0px 0px 2px #000;">Cramless</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<div class="col-11 col-sm-6 px-0">
+													<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Cramless is your last minute print-shop. <span class="d-none d-md-inline">No more cramming: Maximize your time finishing your printables, and we do the last minute printing for you with our UPD (Upload-Print-Deliver) System. Sign-up now!</span></span>
+												</div>
+											</div>
+											<div class="row justify-content-end px-4 pt-2">
+												<span class="badge badge-primary">Tuitt Coding Bootcamp</span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview-long p-1 p-md-2 p-lg-3" src="res/images/webpages/cramless.png">
+								</div>
+							</div>
+							<div class="row justify-content-center pb-2">
+								<div class="prev-item" style="background: linear-gradient(45deg, skyblue, white);">
+									<div class="position-absolute info preview-long">
+										<div class="position-absolute text-right w-100 p-1 p-md-2 p-lg-3" style="top: 1rem; right: 0.5rem;">
+											<div class="row justify-content-end px-4">
+												<a href="http://findeee.000webhostapp.com/" target="_blank" class="a-white hover-text-skyblue"><span class="h5" style="text-shadow: 0px 0px 2px #000;">Findee</span></a>
+											</div>
+											<div class="row justify-content-end px-4">
+												<div class="col-11 col-sm-6 px-0">
+													<span class="text-white small" style="text-shadow: 0px 0px 2px #000;">Findee is a game based on the hit puzzles book, Where's Wally (Waldo). You deserve a break. Play now!</span>
+												</div>
+											</div>
+											<div class="row justify-content-end px-4 pt-2">
+												<span class="badge badge-primary">Tuitt Coding Bootcamp</span>
+											</div>
+										</div>
+									</div>
+									<img class="img-fluid preview-long p-1 p-md-2 p-lg-3" src="res/images/webpages/findeee.png">
+								</div>
+							</div>
+							<div class="row justify-content-center py-3">
+								<div>
+									<span class="h3 font-deliciousAdventures" style="text-shadow: 0px 0px 2px skyblue">more to come...</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer justify-content-center border-0">
+						<div class="row w-100">
+							<div class="col text-left font-deliciousAdventures">
+								<span>eeearlyshell <sub class="font-arial">&copy; 2018</sub></span>
+							</div>
+							<div class="d-none d-lg-block col text-right">
+						    	<a href="https://github.com/earlyshell" target="_blank" class="arts-footer-btns hover-text-skyblue" title="GitHub - earlyshell"><i class="fab fa-github fa-lg fa-fw"></i></a>
+								<a href="#" class="sining-up-btn arts-footer-btns hover-text-orange" title="Go to Top"><span class="d-inline d-md-none">Top</span><i class="fas fa-arrow-alt-circle-up fa-lg fa-fw"></i></a>
+							    <a href="#arts" class="arts-footer-btns hover-text-tomato" data-dismiss="modal" title="Close"><span class="d-inline d-md-none">Close</span><i class="fas fa-times-circle fa-lg fa-fw"></i></a>
+							</div>
+							<div class="d-block d-lg-none col text-right">
+						    	<a href="https://github.com/earlyshell" target="_blank" class="d-none d-sm-inline arts-footer-btns hover-text-skyblue text-uppercase small" title="GitHub - earlyshell">earlyshell</a> <span class="d-none d-sm-inline font-arial font-weight-light small px-1">I</span>
+								<a href="#" class="sining-up-btn arts-footer-btns hover-text-orange text-uppercase small" title="Go to Top">top</a> <span class="font-arial font-weight-light small px-1">I</span>
+							    <a href="#arts" class="arts-footer-btns hover-text-tomato text-uppercase small" data-dismiss="modal" title="Close">close</a>
 							</div>
 						</div>
 					</div>

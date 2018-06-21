@@ -55,35 +55,7 @@ $('.cred-sample').mouseenter(function(){
 });
 
 $('.cred-sample').mouseleave(function(){
-	$('#cred-name').html('CREDTIS');
-});
-
-var getModalHeight = function(elem){
-	// console.log($(mbody_id +' > div:nth-child(3)').height());
-	return $(elem +' > div:nth-child(3)').height();
-}
-
-var getModalScrHeight = function(elem){
-	return $(elem).height();
-}
-
-var getScrollAmt = function(elem){
-	// console.log($(mbody_id).scrollTop());
-	return $(elem).scrollTop();
-}
-
-var getMFooterHeight = function(elem){
-	return $(elem).height();
-}
-
-$('#arts-modal-body').scroll(function(){
-	// getModalHeight('#arts-modal-body');
-	// getScrollAmt('#arts-modal-body');
-	console.log('Scroll Amount: ' + $('#arts-modal-body').scrollTop());
-	console.log('Modal Screen Height: ' + $('#arts-modal-body').parent().outerHeight());
-	console.log('Modal Height: ' + $('#arts-modal-body').prop('scrollHeight'));
-	console.log('Footer Height: ' + $('#arts-modal-body + .modal-footer').outerHeight());
-	console.log('Scroll %: ' + $('#arts-modal-body').scrollTop()/(($('#arts-modal-body').prop('scrollHeight')-$('#arts-modal-body').parent().outerHeight())+$('#arts-modal-body + .modal-footer').outerHeight()));
+	$('#cred-name').html('CREDITS');
 });
 
 $('.sining-up-btn').click(function(){
@@ -91,3 +63,73 @@ $('.sining-up-btn').click(function(){
         scrollTop: $("#sining-title").offset().top
     }, 1000);
 });
+
+$('.prev-btn').click(function(){
+	$('.select-item').hide(1500);
+	$('#mech-pills').hide(2000);
+});
+
+$('.prev-btn-back').click(function(){
+	$('#mech-pills').show(1000);
+	$('.select-item').show(1500);
+});
+
+$('[data-dismiss="modal"]').click(function(){
+	$('#mech-pills').show(1000);
+	$('.select-item').show(1500);
+	$('[id*="-proper"]').removeClass('show');
+});
+
+var getCardHeight = function(elem) {
+	var hgt = [];
+	$(elem).each(function(i){
+		hgt[i] = $(this).height(); 		
+	});
+	return hgt;
+};
+
+var setCardHeight = function(elem) {
+	var x = getCardHeight(elem);
+	var y = Math.max.apply(Math,x);
+	$(elem).height(y);
+};
+
+$('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+	$('.select-item').removeAttr('style');
+	setTimeout(function(){setCardHeight('[class="tab-pane fade active show"] .select-item')},300);
+});
+
+$(window).on('orientationchange resize',function(){
+	//console.log(getCardHeight());
+	$('.select-item').removeAttr('style');
+	$('.modal').hasClass('show') ? setTimeout(function(){setCardHeight('[class="tab-pane fade active show"] .select-item')},300) :'';
+});
+
+// var getModalHeight = function(elem){
+// 	// console.log($(mbody_id +' > div:nth-child(3)').height());
+// 	return $(elem +' > div:nth-child(3)').height();
+// }
+
+// var getModalScrHeight = function(elem){
+// 	return $(elem).height();
+// }
+
+// var getScrollAmt = function(elem){
+// 	// console.log($(mbody_id).scrollTop());
+// 	return $(elem).scrollTop();
+// }
+
+// var getMFooterHeight = function(elem){
+// 	return $(elem).height();
+// }
+
+// $('#arts-modal-body').scroll(function(){
+// 	// getModalHeight('#arts-modal-body');
+// 	// getScrollAmt('#arts-modal-body');
+// 	console.log('Scroll Amount: ' + $('#arts-modal-body').scrollTop());
+// 	console.log('Modal Screen Height: ' + $('#arts-modal-body').parent().outerHeight());
+// 	console.log('Modal Height: ' + $('#arts-modal-body').prop('scrollHeight'));
+// 	console.log('Footer Height: ' + $('#arts-modal-body + .modal-footer').outerHeight());
+// 	console.log('Scroll %: ' + $('#arts-modal-body').scrollTop()/(($('#arts-modal-body').prop('scrollHeight')-$('#arts-modal-body').parent().outerHeight())+$('#arts-modal-body + .modal-footer').outerHeight()));
+// });
+
